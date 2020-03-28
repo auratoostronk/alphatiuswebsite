@@ -45,6 +45,11 @@
 		</iframe></h4>
 		
 		<script>
+			$(function(){
+			  $("#navbarspot").load("navbar.html");
+			});
+		</script>
+		<script>
 		function fixVideoSizes()
 		{
 			var w = document.documentElement.clientWidth * 0.8 - 200;
@@ -55,11 +60,6 @@
 		}
 		window.addEventListener("resize", fixVideoSizes);
 		fixVideoSizes();
-		</script>
-		<script>
-			$(function(){
-			  $("#navbarspot").load("navbar.html");
-			});
 		</script>
 	</body>
 
