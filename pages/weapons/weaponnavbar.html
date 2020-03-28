@@ -1,0 +1,104 @@
+<nav>
+<ul class="mainMenu"> 
+<li>
+	<a href="index.html">HOME</a>
+</li>
+<li id="mainMenuElement" onmouseover="showWeaponMenu()" onmouseout="hideWeaponMenu()">
+	WEAPONS
+	<ul class = "subMenu" id="weaponMenu">
+		<li class="menuElement"><a href="particlesplitter.html">Particle Splitter</a></li>
+		<li class="menuElement"><a href="teslasmg.html">Tesla SMG</a></li>
+		<li class="menuElement"><a href="sparkcannon.html">Spark Cannon</a></li>
+		<li class="menuElement"><a href="photoncarbine.html">Photon Carbine</a></li>
+		<li class="menuElement"><a href="c14.html">C14</a></li>
+		<li class="menuElement"><a href="rocketcannon.html">Rocket Cannon</a></li>
+		<li class="menuElement"><a href="discgun.html">Flux Disc Gun</a></li>
+	</ul>
+</li>
+<li id="mainMenuElement" onmouseover="showTravelMenu()" onmouseout="hideTravelMenu()">
+	TRAVEL ABILITIES
+	<ul class = "subMenu" id="travelMenu">
+		<li class="menuElement"><a href="thrusterboots.html">Thruster Boots</a></li>
+		<li class="menuElement"><a href="jumpthrust.html">Jump Thrust</a></li>
+		<li class="menuElement"><a href="warpdrive.html">Warp Drive</a></li>
+		<li class="menuElement"><a href="hyperdrive.html">Hyperdrive</a></li>
+	</ul>
+</li>
+<li id="mainMenuElement" onmouseover="showActionMenu()" onmouseout="hideActionMenu()">
+	ACTION ABILITIES
+	<ul class = "subMenu" id="actionMenu">
+		<li class="menuElement"><a href="regenzone.html">Regen Zone</a></li>
+		<li class="menuElement"><a href="dimensionshift.html">Dimension Shift</a></li>
+		<li class="menuElement"><a href="powerbrace.html">Power Brace</a></li>
+		<li class="menuElement"><a href="chargezone.html">Charge Zone</a></li>
+	</ul>
+</li>
+<li id="mainMenuElement" onmouseover="showPassiveMenu()" onmouseout="hidePassiveMenu()">
+	PASSIVE ABILITIES
+	<ul class = "subMenu" id="passiveMenu">
+		<li class="menuElement"><a href="dischargepack.html">Discharge Pack</a></li>
+		<li class="menuElement"><a href="adrenalineboost.html">Adrenaline Boost</a></li>
+		<li class="menuElement"><a href="bandolier.html">Bandolier</a></li>
+	</ul>
+</li>
+<li id="mainMenuElement" onmouseover="showMapMenu()" onmouseout="hideMapMenu()">
+	MAPS
+	<ul class = "subMenu" id="mapMenu">
+		<li class="menuElement"><a href="quarry.html">Quarry</a></li>
+		<li class="menuElement"><a href="outpost.html">Outpost</a></li>
+		<li class="menuElement"><a href="sediment.html">Sediment</a></li>
+		<li class="menuElement"><a href="magma.html">Magma</a></li>
+		<li class="menuElement"><a href="waste.html">Waste</a></li>
+		<li class="menuElement"><a href="stronghold.html">Stronghold</a></li>
+	</ul>
+</li>
+</ul>
+</nav>
+
+<script>
+function showWeaponMenu()
+{
+	document.getElementById("weaponMenu").style.display = "block";
+}
+function hideWeaponMenu()
+{
+	document.getElementById("weaponMenu").style.display = "none";
+}
+function showTravelMenu()
+{
+	document.getElementById("travelMenu").style.display = "block";
+}
+function hideTravelMenu()
+{
+	document.getElementById("travelMenu").style.display = "none";
+}
+function showActionMenu()
+{
+	document.getElementById("actionMenu").style.display = "block";
+}
+function hideActionMenu()
+{
+	document.getElementById("actionMenu").style.display = "none";
+}
+function showMapMenu()
+{
+	document.getElementById("mapMenu").style.display = "block";
+}
+function hideMapMenu()
+{
+	document.getElementById("mapMenu").style.display = "none";
+}
+function showPassiveMenu()
+{
+	document.getElementById("passiveMenu").style.display = "block";
+}
+function hidePassiveMenu()
+{
+	document.getElementById("passiveMenu").style.display = "none";
+}
+hideWeaponMenu();
+hideTravelMenu();
+hideActionMenu();
+hidePassiveMenu();
+hideMapMenu();
+</script>
