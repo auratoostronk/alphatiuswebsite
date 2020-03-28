@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160981731-1"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-160981731-1');
+	</script>
+		<link href="alphstyle.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+		<link href="images/alphlogo.png" rel="icon">
+		<title>Alphatius Website</title>
+</head>
+
+	<body>
+		
+		<h1><img src="images/alphlogo.png" alt="A" height="48" width="48">LPHATIUS</h1>
+		
+		<div id="navbarspot"></div>
+		
+		<h2>
+			What is Alphatius?
+		</h2>
+		<p>Alphatius is a mod for DOOM II, which started out as an
+		idea inspired by Seidolon's DOOM ULTIMATE LASER ARENA. Contrary to the chaotic
+		atmosphere of DULA, ALPHATIUS was designed with balance in mind, while also keeping the fun,
+		fast-paced and action-packed gameplay of DULA and DOOM II. To learn more, check out the tabs
+		above! Or, check out the video below!
+		<p class="maindownload">
+			<a href="https://www.dropbox.com/s/rnlmg9k0mfi516e/alphatiusdm1.9release.zip?dl=0" target="_blank">Download here (Dropbox)</a>
+			<br>
+			<a href="https://zandronum.com/" target="_blank">Get Zandronum here</a>
+			<br>
+		</p>
+		<h3>Video</h3>
+		</p>
+		<h4><iframe id="vidalph" width="640" height="360" src="https://www.youtube.com/embed/c-uMu4pzrKA" 
+				frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe></h4>
+		
+		<script>
+		function fixVideoSizes()
+		{
+			var w = document.documentElement.clientWidth * 0.8 - 200;
+			var h = document.documentElement.clientHeight * 0.8 - 200;
+			
+			document.getElementById("vidalph").setAttribute("width", w);
+			document.getElementById("vidalph").setAttribute("height", w * (320 / 640));
+		}
+		function showWeaponMenu()
+		{
+			document.getElementById("weaponMenu").style.display = "block";
+		}
+		function hideWeaponMenu()
+		{
+			document.getElementById("weaponMenu").style.display = "none";
+		}
+		function showTravelMenu()
+		{
+			document.getElementById("travelMenu").style.display = "block";
+		}
+		function hideTravelMenu()
+		{
+			document.getElementById("travelMenu").style.display = "none";
+		}
+		function showActionMenu()
+		{
+			document.getElementById("actionMenu").style.display = "block";
+		}
+		function hideActionMenu()
+		{
+			document.getElementById("actionMenu").style.display = "none";
+		}
+		function showMapMenu()
+		{
+			document.getElementById("mapMenu").style.display = "block";
+		}
+		function hideMapMenu()
+		{
+			document.getElementById("mapMenu").style.display = "none";
+		}
+		function showPassiveMenu()
+		{
+			document.getElementById("passiveMenu").style.display = "block";
+		}
+		function hidePassiveMenu()
+		{
+			document.getElementById("passiveMenu").style.display = "none";
+		}
+		window.addEventListener("resize", fixVideoSizes);
+		hideWeaponMenu();
+		hideTravelMenu();
+		hideActionMenu();
+		hidePassiveMenu();
+		hideMapMenu();
+		fixVideoSizes();
+		</script>
+		<script>
+			$(function(){
+			  $("#navbarspot").load("navbar.html");
+			});
+		</script>
+	</body>
+
+</html>

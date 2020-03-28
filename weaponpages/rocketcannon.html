@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160981731-1"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-160981731-1');
+	</script>
+		<link href="../alphstyle.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+		<link href="../images/alphlogo.png" rel="icon">
+		<title>Alphatius Website - Rocket Cannon</title>
+</head>
+
+	<body>
+		
+		<h1><img src="../images/alphlogo.png" alt="A" height="48" width="48">LPHATIUS</h1>
+		
+		<div id="navbarspot"></div>
+		
+		<h2>
+			Rocket Cannon
+		</h2>
+			<h3> Primary Fire: Velocity Rocket</h3>
+			<p>The Rocket Cannon fires energy-powered missiles that gain more power as they
+			travel. Explosion damage, explosion radius, and direct-hit damage each increase
+			with time traveled. Firing this weapon recoils the user back a fair bit.</p>
+			<br>
+			<div class="centered">
+				<img id="image1" src="../images/weapons/rocketcannon_1.gif" alt="Missing Image" style="width:640px;height:360px">
+			</div>
+			<br>
+			<h3> Alt-Fire: Rocket Detonator</h3>
+			<p>The Alt-Fire mode for the Rocket Cannon can be used to detonate rockets in the
+			middle of their trajectory. Explosion damage, explosion radius, and direct-hit damage
+			are each increased slightly when this mode is activated.</p>
+			<br>
+			<div class="centered">
+				<img id="image2" src="../images/weapons/rocketcannonalt_1.gif" alt="Missing Image" style="width:640px;height:360px">
+			</div>
+			<br>
+		</p>
+		
+		
+		<script>
+		function showWeaponMenu()
+		{
+			document.getElementById("weaponMenu").style.display = "block";
+		}
+		function hideWeaponMenu()
+		{
+			document.getElementById("weaponMenu").style.display = "none";
+		}
+		function showTravelMenu()
+		{
+			document.getElementById("travelMenu").style.display = "block";
+		}
+		function hideTravelMenu()
+		{
+			document.getElementById("travelMenu").style.display = "none";
+		}
+		function showActionMenu()
+		{
+			document.getElementById("actionMenu").style.display = "block";
+		}
+		function hideActionMenu()
+		{
+			document.getElementById("actionMenu").style.display = "none";
+		}
+		function showMapMenu()
+		{
+			document.getElementById("mapMenu").style.display = "block";
+		}
+		function hideMapMenu()
+		{
+			document.getElementById("mapMenu").style.display = "none";
+		}
+		function showPassiveMenu()
+		{
+			document.getElementById("passiveMenu").style.display = "block";
+		}
+		function hidePassiveMenu()
+		{
+			document.getElementById("passiveMenu").style.display = "none";
+		}
+		hideWeaponMenu();
+		hideTravelMenu();
+		hideActionMenu();
+		hidePassiveMenu();
+		hideMapMenu();
+	</script>
+	<script>
+		function fixImageSizes()
+		{
+			var w = document.documentElement.clientWidth * 0.8 - 200;
+			var h = document.documentElement.clientHeight * 0.8 - 200;
+			var resscale = 360/640;
+			var picsize = "width:" + w + "px;height:" + (w * resscale) +"px;";
+			document.getElementById("image1").setAttribute("style", picsize);
+			document.getElementById("image2").setAttribute("style", picsize);
+		}
+		window.addEventListener("resize", fixImageSizes);
+		fixImageSizes()
+	</script>
+	<script>
+		$(function(){
+		  $("#navbarspot").load("navbar.html");
+		});
+	</script>
+		
+	</body>
+
+</html>
