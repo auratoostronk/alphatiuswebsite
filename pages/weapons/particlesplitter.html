@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160981731-1"></script>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<meta charset="utf-8" content="nocache">
 	
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -11,16 +9,18 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-160981731-1');
 	</script>
-		<link href="../../alphstyle.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-		<link href="../../images/alphlogo.png" rel="icon">
-		<title>Alphatius Website - Particle Splitter</title>
+		<base href="/alphatiuswebsite/">
+		<script src="javascript/jquery-3.5.1.min.js"></script>
+		<link href="alphstyle.css" rel="stylesheet">
+		<link href="images/alphlogo.png" rel="icon">
+	<title>Alphatius Website - Particle Splitter</title>
 </head>
 
 	<body>
 		
-		<h1><img src="../../images/alphlogo.png" alt="A" height="48" width="48">LPHATIUS</h1>
+		<h1><img src="images/alphlogo.png" alt="A" height="48" width="48">LPHATIUS</h1>
 		
 		<div id="navbarspot"></div>
 		
@@ -33,8 +33,8 @@
 			after a set distance; however, the weapon fires enough pellets to kill
 			targets at close range.</p>
 			<br>
-			<div class="centered">
-				<img id="image1" src="../../images/weapons/particlesplitter_1.gif" alt="Missing Image" style="width:640px;height:360px">
+			<div class="weap-img-container">
+				<img class="weapon-image" src="images/weapons/particlesplitter_1.gif" alt="Missing Image">
 			</div>
 			<br>
 			<h3> Alt-Fire: Particle Cone </h3>
@@ -42,8 +42,8 @@
 			into a spread of multiple pellets. This detonation can be triggered shortly after
 			the shot leaves the barrel by pressing the Alt-Fire key again.</p>
 			<br>
-			<div class="centered">
-				<img id="image2" src="../../images/weapons/particlesplitteralt_1.gif" alt="Missing Image" style="width:640px;height:360px">
+			<div class="weap-img-container">
+				<img class="weapon-image" src="images/weapons/particlesplitteralt_1.gif" alt="Missing Image">
 			</div>
 			<br>
 			<h3> Alt-Fire Mod: Half-Life Slug</h3>
@@ -53,76 +53,15 @@
 			itself in lateral directions. These slugs can "chain-react" to kill multiple
 			enemies.</p>
 			<br>
-			<div class="centered">
-				<img id="image3" src="../../images/weapons/particlesplitteralt_2_2.gif" alt="Missing Image" style="width:640px;height:360px">
+			<div class="weap-img-container">
+				<img class="weapon-image" src="images/weapons/particlesplitteralt_2_2.gif" alt="Missing Image">
 			</div>
 			<br>
 		</p>
 	<script>
-		function fixImageSizes()
-		{
-			var w = document.documentElement.clientWidth * 0.8 - 200;
-			var h = document.documentElement.clientHeight * 0.8 - 200;
-			var resscale = 360/640;
-			var picsize = "width:" + w + "px;height:" + (w * resscale) +"px;";
-			document.getElementById("image1").setAttribute("style", picsize);
-			document.getElementById("image2").setAttribute("style", picsize);
-			document.getElementById("image3").setAttribute("style", picsize);
-		}
-		window.addEventListener("resize", fixImageSizes);
-		fixImageSizes()
-	</script>
-	<script>
 		$(function(){
-		  $("#navbarspot").load("weaponnavbar.html");
+		  $("#navbarspot").load("pages/navbar/navbar.html");
 		});
-	</script>
-	<script>
-	function showWeaponMenu()
-	{
-		document.getElementById("weaponMenu").style.display = "block";
-	}
-	function hideWeaponMenu()
-	{
-		document.getElementById("weaponMenu").style.display = "none";
-	}
-	function showTravelMenu()
-	{
-		document.getElementById("travelMenu").style.display = "block";
-	}
-	function hideTravelMenu()
-	{
-		document.getElementById("travelMenu").style.display = "none";
-	}
-	function showActionMenu()
-	{
-		document.getElementById("actionMenu").style.display = "block";
-	}
-	function hideActionMenu()
-	{
-		document.getElementById("actionMenu").style.display = "none";
-	}
-	function showMapMenu()
-	{
-		document.getElementById("mapMenu").style.display = "block";
-	}
-	function hideMapMenu()
-	{
-		document.getElementById("mapMenu").style.display = "none";
-	}
-	function showPassiveMenu()
-	{
-		document.getElementById("passiveMenu").style.display = "block";
-	}
-	function hidePassiveMenu()
-	{
-		document.getElementById("passiveMenu").style.display = "none";
-	}
-	hideWeaponMenu();
-	hideTravelMenu();
-	hideActionMenu();
-	hidePassiveMenu();
-	hideMapMenu();
 	</script>
 		
 	</body>
