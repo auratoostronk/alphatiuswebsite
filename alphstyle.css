@@ -1,18 +1,18 @@
 body
 {
-	background-color: black;
-	color: #880000;
+	background-color: white;
+	color: #DD0000;
 	padding-left: 100px;
 	padding-right: 100px;
 	position: relative;
 }
 a:link
 {
-	color: #880000;
+	color: #DD0000;
 }
 a:visited
 {
-	color: #880000;
+	color: #DD0000;
 }
 a:hover
 {
@@ -20,11 +20,12 @@ a:hover
 }
 p
 {
-	color: #880000;
+	color: #DD0000;
 	text-align: center;
-	font-family: 'Courier New', bold;
-	font-weight: 900;
-	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+	font-weight: 800;
+	font-size: 24px;
 	padding-left: 100px;
 	padding-right: 100px;
 }
@@ -42,33 +43,13 @@ h1
 }
 h2
 {
-	color: #DD0000;
+	color: white;
+	background-color: #DD0000;
+	display: block;
 	text-align: center;
 	font-family: 'Orbitron', bold;
 	font-weight: 900;
 	font-size: 40px;
-}
-h2 vid
-{
-	text-align: center;
-}
-h3
-{
-	color: #880000;
-	text-align: center;
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 30px;
-}
-h4
-{
-	color: #880000;
-	text-align: center;
-	font-family: 'Courier New', bold;
-	font-weight: 900;
-	font-size: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
 }
 /*
 li
@@ -78,7 +59,7 @@ li
 	font-family: 'Orbitron', bold;
 	font-weight: 900;
 	display: block;
-	color: black;
+	color: white;
 	width: 250px;
 	padding: 10px;
 	text-decoration: none;
@@ -91,16 +72,16 @@ li a
 li a:hover
 {
 	background-color: red;
-	color: black;
+	color: white;
 }
 li a:visited
 {
 	background-color: red;
-	color: black;
+	color: white;
 }
 li a:link
 {
-	color: black;
+	color: white;
 }*/
 ul.mainMenu
 {
@@ -114,7 +95,7 @@ li.mainMenuElement
 	font-family: 'Orbitron', bold;
 	font-weight: 900;
 	font-size: 20px;
-	color: black;
+	color: white;
 	background-image: url("images/ui/navbar-button.png");
 	background-size: 100%;
 	text-decoration: none;
@@ -129,6 +110,7 @@ li.mainMenuElement
 }
 li.mainMenuElement:hover
 {
+	color: black;
 	background-image: url("images/ui/navbar-button-hover.png");
 }
 ul.subMenu
@@ -137,7 +119,7 @@ ul.subMenu
 	font-family: 'Orbitron', bold;
 	font-weight: 900;
 	display: block;
-	color: black;
+	color: white;
 	text-decoration: none;
 	position: absolute;
 	padding-top: 10px;
@@ -150,7 +132,7 @@ li.menuElement
 	display: block;
 	background-image: url("images/ui/navbar-button.png");
 	background-size: 100%;
-	color: black;
+	color: white;
 	z-index: 4;
 	padding-inline-start: 0px;
 
@@ -170,10 +152,14 @@ a.menubutton
 	font-weight: 900;
 	font-size: 20px;
 	text-decoration: none;
-	color: black;
+	color: white;
 	margin: 0;
 	padding-bottom: 10px;
 	padding-top: 10px;
+}
+a.menubutton:hover
+{
+	color: black;
 }
 div.vidcontainer
 {
@@ -258,7 +244,7 @@ img.mapimgacross:before
 img.mapimgacross
 {
 	border-style: solid;
-	border-color: #880000;
+	border-color: #DD0000;
 	border-width: 10px;
 	text-align: center;
 	padding-left: 0px;
@@ -268,7 +254,7 @@ img.mapimgacross
 }
 div.weap-icon-container
 {
-	background-color: black;
+	background-color: white;
 	position: relative;
     width: 100%;
     height: auto;
