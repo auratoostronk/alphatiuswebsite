@@ -18,11 +18,21 @@ a:hover
 {
 	color: #DD0000;
 }
-p
+p.uppercase
 {
 	color: #DD0000;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: 'Electrolize', sans-serif;
+	font-weight: 800;
+	font-size: 24px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+p
+{
+	color: #DD0000;
+	text-align: center;
 	font-family: 'Electrolize', sans-serif;
 	font-weight: 800;
 	font-size: 24px;
@@ -50,6 +60,14 @@ h2
 	font-family: 'Orbitron', bold;
 	font-weight: 900;
 	font-size: 40px;
+}
+h3
+{
+	color: #DD0000;
+	text-align: center;
+	font-family: 'Orbitron', bold;
+	font-weight: 900;
+	font-size: 30px;
 }
 /*
 li
@@ -170,6 +188,7 @@ div.vidcontainer
 }
 div.img-container:before
 {
+	pointer-events: none;
 	z-index: 1;
 	content: "";
 	position: absolute;
@@ -182,6 +201,7 @@ div.img-container:before
 }
 div.img-container
 {
+	pointer-events: none;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -198,9 +218,11 @@ img.homeimage
 	object-fit: cover;
     width: 100%;
     height: 100%;
+	pointer-events: auto;
 }
-div.weap-img-container:before
+div.vid-container:before
 {
+	pointer-events: none;
 	z-index: 1;
 	content: "";
 	position: absolute;
@@ -211,8 +233,9 @@ div.weap-img-container:before
 	border-image-outset: 5px;
 	box-sizing: border-box;
 }
-div.weap-img-container
+div.vid-container
 {
+	pointer-events: none;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -220,14 +243,16 @@ div.weap-img-container
     height: 0%;
     padding-bottom: 30%;
 }
-img.weapon-image
+video.weapon-vid
 {
     position: absolute;
 	z-index: 0;
+    top: 0;
     left: 0;
 	object-fit: cover;
     width: 100%;
     height: 100%;
+	pointer-events: auto;
 }
 img.mapimgacross:before
 {
@@ -243,6 +268,7 @@ img.mapimgacross:before
 }
 img.mapimgacross
 {
+	pointer-events: auto;
 	border-style: solid;
 	border-color: #DD0000;
 	border-width: 10px;
@@ -271,6 +297,7 @@ img.weap-icon:before
 }
 img.weap-icon
 {
+	pointer-events: auto;
     position: relative;
 	z-index: 0;
 	object-fit: cover;
