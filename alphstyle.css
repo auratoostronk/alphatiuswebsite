@@ -1,6 +1,6 @@
 body
 {
-	background-color: white;
+	background-color: #181B1D;
 	color: #DD0000;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -275,16 +275,20 @@ img.mapimgacross
 	text-align: center;
 	padding-left: 0px;
 	padding-right: 0px;
-	width:100%;
+	width: 100%;
 	height: auto;
 }
 div.weap-icon-container
 {
+	z-index: 1;
+	border: 40px solid transparent;
+	border-image: url("images/ui/video-border.png") 40 round;
+	border-image-outset: 5px;
+	box-sizing: border-box;
 	background-color: white;
 	position: relative;
     width: 100%;
     height: auto;
-	border: 40px solid transparent;
 	align-content: center;
 }
 img.weap-icon:before
