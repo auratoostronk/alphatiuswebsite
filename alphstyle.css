@@ -1,6 +1,6 @@
 body
 {
-	background-color: #181B1D;
+	background-color: #0F1214;
 	color: #DD0000;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -23,7 +23,7 @@ p.uppercase
 	color: #DD0000;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Electrolize', sans-serif;
 	font-weight: 800;
 	font-size: 24px;
 	padding-left: 100px;
@@ -128,7 +128,7 @@ li.mainMenuElement
 }
 li.mainMenuElement:hover
 {
-	color: black;
+	color: white;
 	background-image: url("images/ui/navbar-button-hover.svg");
 }
 ul.subMenu
@@ -177,7 +177,7 @@ a.menubutton
 }
 a.menubutton:hover
 {
-	color: black;
+	color: white;
 }
 div.vidcontainer
 {
