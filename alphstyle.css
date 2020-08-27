@@ -78,22 +78,6 @@ li
 	font-weight: 900;
 	color: #DD0000;
 }
-li a
-{
-	
-}
-li a:hover
-{
-	color: white;
-}
-li a:visited
-{
-	color: #DD0000;
-}
-li a:link
-{
-	color: #DD0000;
-}
 ul.mainMenu
 {
 	margin: auto;
