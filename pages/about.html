@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" content="no-cache">
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-160981731-1');
+	</script>
+		<link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"> 
+		<base href="../">
+		<script src="javascript/jquery-3.5.1.min.js"></script>
+		<link href="images/alphlogo.png" rel="icon">
+		<link href="alphstyle.css" rel="stylesheet">
+		<title>Alphatius Website - About</title>
+</head>
+
+	<body>
+		
+		<h1><img src="images/alphlogo.png" alt="A" height="48" width="48">LPHATIUS</h1>
+		
+		<div id="navbarspot"></div>
+        <article>
+            <h2>What is Alphatius?</h2>
+
+            <div class="left">
+                <p class="alphabout">Alphatius is a multiplayer mod that uses a heavily modifed version of the classic "Doom Engine" (idTech 1). Using the engine known as Q-Zandronum, Alphatius creates a unique Arena Shooter experience designed for casual and competitive gamers alike. Featuring new weapons, new mechanics, and 19 built-in maps, it's aim is to be fast-paced, balanced, and fun.</p>
+            </div>
+            <div class="right">
+                <div class="vid-container">
+                        <iframe width=700px height=400px src="https://www.youtube.com/embed/QIhQb_u2huE" title="[Zandronum] ALPHATIUS 1.13 - A PVP-Oriented Multiplayer Mod for DOOM" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </article>
+        
+        <article class="features">
+            <h2>Features</h2>
+            <ul class="featureul">
+                <li class="featureli" id="multiplayerfeaturebutton">Multiplayer</li>
+                <li class="featureli" id="botfeaturebutton">Practice with Bots</li>
+                <li class="featureli" id="tutorialfeaturebutton">Built-in tutorial</li>
+                <li class="featureli" id="gamemodefeaturebutton">7 classic gamemodes</li>
+                <li class="featureli" id="mapfeaturebutton">19 unique maps</li>
+            </ul>
+            <div id="multiplayerfeature">
+                <div class="left">
+                    <p class="alphabout">With Q-Zandronum's netcode improvements, Alphatius provides an arena shooter experience like no other. Features like unlagged projectiles and client-predicted scripts make Alphatius feel smooth and responsive. On top of all that, Alphatius comes packaged with a ready-to-go server browser. Simply click a server in the list to join.</p>
+                </div>
+                <div class="right">
+                    <img class="across" src="images/features/feature-multiplayer.png" alt="A Picture of players playing multiplayer">
+                </div>
+            </div>
+            <div id="botfeature">
+                <div class="left">
+                    <p class="alphabout">Alphatius also has built-in bots. If you are looking for people to frag while alone, or need some fresh meat in your server, you can add bots! These bots will move, shoot, use their abilities and alt-fires, and do so much more! Boot up the game offline to practice against AI, or host your own server with bots so others can join too.</p>
+                </div>
+                <div class="right">
+                    <img class="across" src="images/features/feature-bots.png" alt="A Picture of some bots.">
+                </div>
+            </div>
+            <div id="tutorialfeature">
+                <div class="left">
+                    <p class="alphabout">If you are new to Alphatius, or are looking to learn more about it, Alphatius has two tutorial levels for you to use. The first Tutorial level is
+                    designed for beginner players and teaches the basics of the mod. The second tutorial level is the firing range; it has some test targets with all the weapons and a parkour area to try the travel abilities.</p>
+                </div>
+                <div class="right">
+                    <img class="across" src="images/features/feature-tutorial.png" alt="A Picture of the tutorial">
+                </div>
+            </div>
+            <div id="gamemodefeature">
+                <div class="left">
+                <p class="alphabout">Alphatius comes with 7 gamemodes:<br></p>
+                <p class="gamemodefeatures">
+                    Deathmatch - Commonly known as "Free-For-All".<br>
+                    Team Deathmatch - Team version of Deathmatch.<br>
+                    Duel - 1-on-1 gamemode. Player with the most kills wins!<br>
+                    Domination - Capture and hold sectors on the map.<br>
+                    Last Man Standing - One life per round. Last alive wins!<br>
+                    Team LMS - Commonly known as "Clan Arena". <br>
+                    Capture the Flag - Take the enemy's flag and bring it to your base.<br>
+                </p>
+                </div>
+                <div class="right">
+                    <img class="across" src="images/features/feature-gamemode.png" alt="A Picture of the CTF gamemode">
+                </div>
+            </div>
+            <div id="mapfeature">
+                <div class="left">
+                    <p class="alphabout">Alphatius comes with 19 playable maps: 6 duel-based maps and 13 deathmatch-based maps. All maps are compatible with Duel, Deathmatch, Team DM, LMS, and Team LMS while some maps
+                    have addtional support for Domination and CTF. Alphatius's maps have a variety of environments and design styles: from barren dirt planets, scorching lava environments, to asteroids in space!</p>
+                </div>
+                <div class="right">
+                    <img class="across" src="images/features/feature-maps.png" alt="A Picture of an Alphatius map">
+                </div>
+            </div>
+        </article>
+        
+        <br><br>
+        <!--<footer></footer>-->
+        
+		<script>
+			$(function(){
+			  $("#navbarspot").load("pages/navbar/navbar.html");
+              $("#multiplayerfeature").show(500);
+              $("#botfeature").hide(0);
+              $("#tutorialfeature").hide(0);
+              $("#gamemodefeature").hide(0);
+              $("#mapfeature").hide(0);
+			});
+		</script>
+        
+        <script>
+            $("#multiplayerfeaturebutton").click(function()   
+            {
+              $("#botfeature").hide(0);
+              $("#tutorialfeature").hide(0);
+              $("#gamemodefeature").hide(0);
+              $("#mapfeature").hide(0);
+              $("#multiplayerfeature").show(500);
+            }); 
+            $("#botfeaturebutton").click(function()   
+            {
+              $("#multiplayerfeature").hide(0);
+              $("#tutorialfeature").hide(0);
+              $("#gamemodefeature").hide(0);
+              $("#mapfeature").hide(0);
+              $("#botfeature").show(500);
+            }); 
+            $("#tutorialfeaturebutton").click(function()   
+            {
+              $("#multiplayerfeature").hide(0);
+              $("#botfeature").hide(0);
+              $("#gamemodefeature").hide(0);
+              $("#mapfeature").hide(0);
+              $("#tutorialfeature").show(500);
+            }); 
+            $("#gamemodefeaturebutton").click(function()   
+            {
+              $("#multiplayerfeature").hide(0);
+              $("#botfeature").hide(0);
+              $("#tutorialfeature").hide(0);
+              $("#mapfeature").hide(0);
+              $("#gamemodefeature").show(500);
+            }); 
+            $("#mapfeaturebutton").click(function()   
+            {
+              $("#multiplayerfeature").hide(0);
+              $("#botfeature").hide(0);
+              $("#tutorialfeature").hide(0);
+              $("#gamemodefeature").hide(0);
+              $("#mapfeature").show(500);
+            }); 
+        </script>
+	</body>
+
+</html>

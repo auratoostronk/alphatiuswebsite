@@ -1,100 +1,19 @@
 <nav>
-<base href="/alphatiuswebsite/">
+<base href="../../">
 <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 <link href="alphstyle.css" rel="stylesheet">
 <ul class="mainMenu"> 
-<li class="mainMenuElement" onmouseover="showHomeMenu()" onmouseout="hideHomeMenu()">
-	HOME
-	<ul class = "subMenu" id="homeMenu">
-		<li class="menuElement"><a class="menubutton" href="index.html">Home</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/main/about.html">About</a></li>
-	</ul>
-</li>
-<li class="mainMenuElement" onmouseover="showWeaponMenu()" onmouseout="hideWeaponMenu()">
-	WEAPONS
-	<ul class = "subMenu" id="weaponMenu">
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/particlesplitter.html">Particle Splitter</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/teslasmg.html">Tesla SMG</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/sparkcannon.html">Spark Cannon</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/photoncarbine.html">Photon Carbine</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/c14.html">C14</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/weapons/rocketcannon.html">Rocket Cannon</a></li>
-	</ul>
-</li>
-<li class="mainMenuElement" onmouseover="showAbilityMenu()" onmouseout="hideAbilityMenu()">
-	ABILITIES
-	<ul class = "subMenu" id="abilityMenu">
-		<li class="menuElement"><a class="menubutton" href="pages/abilities/travels.html">Travel Abilities</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/abilities/actions.html">Action Abilities</a></li>
-	</ul>
-</li>
-<li class="mainMenuElement" onmouseover="showMapMenu()" onmouseout="hideMapMenu()">
-	MAPS
-	<ul class = "subMenu" id="mapMenu">
-		<li class="menuElement"><a class="menubutton" href="pages/maps/quarry.html">Quarry</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/sediment.html">Sediment</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/magma.html">Magma</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/waste.html">Waste</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/stronghold.html">Stronghold</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/frostbite.html">Frostbite</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/asteroid.html">Asteroid</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/maps/torrent.html">Torrent</a></li>
-	</ul>
-</li>
-<li class="mainMenuElement" onmouseover="showPlayMenu()" onmouseout="hidePlayMenu()">
-	PLAY NOW!
-	<ul class = "subMenu" id="playMenu">
-		<li class="menuElement"><a class="menubutton" href="https://www.dropbox.com/s/d6rhfbutme8c7qo/ALPHATIUS%201.11%20RELEASE.zip?dl=1" download>DOWNLOAD</a></li>
-		<li class="menuElement"><a class="menubutton" href="pages/main/gettingstarted.html">Getting Started</a></li>
-	</ul>
-</li>
+    <li class="mainMenuElement">
+        <a class="menubutton" href="index.html">HOME</a> 
+    </li>
+    <li class="mainMenuElement">
+        <a class="menubutton" href="pages/about.html">ABOUT</a> 
+    </li>
+    <li class="mainMenuElement">
+        <a class="menubutton" href="https://discord.gg/MqXv8FkCmX">DISCORD</a> 
+    </li>
+    <li class="mainMenuElement">
+        <a class="menubutton" href="https://www.dropbox.com/s/d0zufvaed5pk1ly/alphatius-v034c.zip?dl=1">DOWNLOAD</a> 
+    </li>
 </ul>
 </nav>
-
-<script>
-function showHomeMenu()
-{
-	document.getElementById("homeMenu").style.display = "block";
-}
-function hideHomeMenu()
-{
-	document.getElementById("homeMenu").style.display = "none";
-}
-function showWeaponMenu()
-{
-	document.getElementById("weaponMenu").style.display = "block";
-}
-function hideWeaponMenu()
-{
-	document.getElementById("weaponMenu").style.display = "none";
-}
-function showAbilityMenu()
-{
-	document.getElementById("abilityMenu").style.display = "block";
-}
-function hideAbilityMenu()
-{
-	document.getElementById("abilityMenu").style.display = "none";
-}
-function showMapMenu()
-{
-	document.getElementById("mapMenu").style.display = "block";
-}
-function hideMapMenu()
-{
-	document.getElementById("mapMenu").style.display = "none";
-}
-function showPlayMenu()
-{
-	document.getElementById("playMenu").style.display = "block";
-}
-function hidePlayMenu()
-{
-	document.getElementById("playMenu").style.display = "none";
-}
-hideHomeMenu();
-hideWeaponMenu();
-hideAbilityMenu();
-hideMapMenu();
-hidePlayMenu();
-</script>
