@@ -1,365 +1,300 @@
-body
-{
-	background-color: #0F1214;
-    background-image: url(images/alphatius-background-upscaled.png);
-	color: #FF0000;
-	padding-left: 200px;
-	padding-right: 200px;
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Share Tech Mono", serif;
+    background-color: #17110d;
+    color: #ffffff;
 }
-a:link
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-content .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.cta {
+    margin-top: 2rem;
+}
+
+.cta h1 {
+    font-size: 2.5rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    text-align: center;
+    background: #800000;
+}
+a
 {
-	color: #FF0000;
+    color: #FF0000;
+    text-decoration-color: #FF0000;
 }
 a:visited
 {
-	color: #FF0000;
+    color: #FF0000;
+    text-decoration-color: #FF0000;
 }
-a:hover
-{
-	color: #FF0000;
-}
-p.uppercase
-{
-	color: #FF0000;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Electrolize', sans-serif;
-	font-weight: 800;
-    font-size: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-p
-{
-	color: #FF0000;
-	text-align: center;
-	font-family: 'Electrolize', sans-serif;
-	font-weight: 800;
-    font-size: 30px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-h1
-{
-	color: #FF0000;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 60px;
-    margin: 20px;
-}
-h2
-{
-	color: white;
-	background-color: #FF0000;
-	display: block;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 40px;
-    padding: 10px;
-}
-h3
-{
-	color: #FF0000;
-	text-align: center;
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 30px;
-}
-ul
-{
-    list-style: none;
-	text-decoration: none;
-}
-li
-{
-	font-family: 'Electrolize', sans-serif;
-	font-size: 25px;
-	font-weight: 900;
-	text-align: center;
-	color: #FF0000;
-}
-ul.mainMenu
-{
-	margin: auto;
-	list-style-type: none;
-	overflow: hidden;
-	display: table;
-}
-li.mainMenuElement
-{
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 40px;
-	color: white;
-	background-image: url("images/ui/navbar-button.svg");
-	background-size: 100%;
-	text-decoration: none;
-	text-align: center;
-	float: left;
-	display: block;
-	display: inline;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-inline-start: 0px;
-	width: 300px;
-}
-li.mainMenuElement:hover
-{
-	color: white;
-	background-image: url("images/ui/navbar-button-hover.svg");
-}
-a.menubutton
-{
-	display: block;
-	text-align: center;
-	font-family: 'Orbitron', bold;
-	font-weight: 600;
-	font-size: 24px;
-	text-decoration: none;
-	color: white;
-	margin: 0;
-	padding-bottom: 0px;
-	padding-top: 0px;
-}
-a.menubutton:hover
-{
-	color: white;
-}
-div.vidcontainer
-{
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-div.img-container:before
-{
-	pointer-events: none;
-	z-index: 1;
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border: 40px solid transparent;
-	border-image: url("images/ui/video-border.png") 40 round;
-	border-image-outset: 5px;
-	box-sizing: border-box;
-}
-div.img-container
-{
-	pointer-events: none;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-    width: 80%;
-    height: 0%;
-    padding-bottom: 25%;
-}
-img.homeimage
-{
-    position: absolute;
-	z-index: 0;
-    top: 0;
-    left: 0;
-	object-fit: cover;
-    width: 100%;
-    height: 100%;
-	pointer-events: auto;
-}
-div.vid-container:before
-{
-	pointer-events: none;
-	z-index: 1;
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border: 40px solid transparent;
-	border-image: url("images/ui/video-border.png") 40 round;
-	border-image-outset: 5px;
-	box-sizing: border-box;
-}
-video.weapon-vid
-{
-    position: absolute;
-	z-index: 0;
-    top: 0;
-    left: 0;
-	object-fit: cover;
-    width: 100%;
-    height: 100%;
-	pointer-events: auto;
-}
-img.across:before
-{
-	z-index: 1;
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: auto;
-	border: 40px solid transparent;
-	border-image: url("images/ui/video-border.png") 40 round;
-	border-image-outset: 5px;
-	box-sizing: border-box;
-}
-img.across
-{
-	pointer-events: auto;
-	border-style: solid;
-	border-color: #FF0000;
-	border-width: 10px;
-	text-align: center;
-	padding-left: 0px;
-	padding-right: 0px;
-    margin-top: 30px;
-	width: 100%;
-	height: auto;
-}
-div.weap-icon-container
-{
-	z-index: 1;
-	border: 40px solid transparent;
-	border-image: url("images/ui/video-border.png") 40 round;
-	border-image-outset: 5px;
-	box-sizing: border-box;
-	background-color: #505050;
-	position: relative;
-    width: 100%;
-    height: auto;
-	align-content: center;
-}
-img.weap-icon:before
-{	
-	z-index: 1;
-	content: "";
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-img.weap-icon
-{
-	pointer-events: auto;
-    position: relative;
-	z-index: 0;
-	object-fit: cover;
-    width: 200px;
-    height: auto;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	border-image: url("images/ui/weap-icon-border.png") 40 round;
-	box-sizing: border-box;
-}
-video.home-video
-{
-    position: absolute;
-	z-index: 0;
-    top: 0;
-    left: 0;
-	object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-div.centered
-{
-    width: 100%;
-	text-align: center;
-}
-img
-{
-	max-width: 100%;
-	height: auto;
-}
-div.nopadding
-{
-	padding-left: -100px;
-	padding-right: -100px;
-}
-div.left
-{
-    padding: 0px;
-    width: 700px;
-    float: left;
-    display: inline-block;
-}
-div.right
-{
-    padding: 0px;
-    width: 700px;
-    float: right;
-    display: inline-block;
-}
-div.vid-container
-{
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-    width: 100%;
-    height: 0%;
-    padding-bottom: 0px;
-}
-ul.featureul
-{
-    margin-left: -100px;
-    margin-right: -100px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+/* Gameplay Section */
+.gameplay {
+    padding: 2rem;
     text-align: center;
-	position: relative;
+    background: #000000;
 }
-li.featureli
-{
-    cursor: pointer;
-    color: #ff0000;
-    background-color: white;
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline;
-	border: 20px solid transparent;
-	border-image: url("images/ui/video-border.png") 40 round;
-	border-image-outset: 5px;
-	box-sizing: border-box;
+
+/* Features Section */
+.features {
+    padding: 2rem;
+    text-align: center;
+    background: #221b16;
 }
-li.featureli:hover
-{
-    background-color: #e0e0e0;
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 }
-article
-{
-    padding-top: 10px;
-    clear: both;
-    padding-bottom: 10px;
+
+.feature-card {
+    background: #800000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
 }
-footer
-{
-	text-align: center;
-	font-family: 'Orbitron', bold;
-	font-weight: 900;
-	font-size: 30px;
-    color: white;
-    background-color:  #FF0000;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding: 20px;
+
+/* Media Section */
+.media {
+    padding: 2rem;
+    text-align: center;
+    background: #221b16;
 }
-p.alphabout
-{
-    font-size: 30px;
-    text-align: justify;
+
+.media-gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
-article.features
-{
-    margin-bottom: 300px;
+
+.media-item {
+    background: #800000;
+    padding: 2rem;
+    border-radius: 10px;
+    flex: 1;
 }
-p.gamemodefeatures
-{
-    font-size: 24px;
+
+/* Footer */
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background: #17110d;
+    color: #a1a1a1;
+}
+
+.footer .social-links a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #dd0000;
+}
+
+/* Hero Section for Downloads Page */
+.small-hero {
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/downloads-background.jpg') center/cover no-repeat;
+}
+
+/* Downloads Page */
+.downloads {
+    padding: 2rem;
+    text-align: center;
+    background-color: #17110d;
+    color: #ffffff;
+}
+
+.downloads h1 {
+    font-size: 2.5rem;
+    color: #FF0000; /* Red accent */
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #a1a1a1;
+}
+
+.setup-instructions {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #800000;
+    border-radius: 10px;
+    max-width: 800px;
     text-align: left;
+    color: #ffffff;
+}
+
+.setup-instructions h2 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}
+
+.setup-instructions ol {
+    list-style: decimal;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.setup-instructions li {
+    margin-bottom: 0.8rem;
+}
+
+.download-link {
+    margin: 2rem 0;
+}
+
+.download-link .download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.download-link .download-btn:hover {
+    background-color: #dd0000;
+}
+
+/* Q&A Section */
+.qa-section {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #800000;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.qa-section h2 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.qa-item {
+    margin-bottom: 1.5rem;
+}
+
+.qa-item h3 {
+    font-size: 1.2rem;
+    color: #ff6666;
+    margin-bottom: 0.5rem;
+}
+
+.qa-item p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+.qa-item ul {
+    list-style-type: circle;
+    margin: 0.5rem 0 0 1.5rem;
+    color: #f1f1f1;
+}
+
+
+/* News Page */
+.news {
+    padding: 2rem;
+    text-align: center;
+    background-color: #17110d;
+    color: #ffffff;
+}
+
+.news h1 {
+    font-size: 2.5rem;
+    color: #FF0000; /* Red accent */
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #a1a1a1;
+}
+
+/* News Articles */
+.news-articles {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.news-item {
+    background: #800000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+.news-item h2 {
+    color: #ff4444;
+    margin-bottom: 0.5rem;
+}
+
+.news-item p {
+    margin: 0.5rem 0;
+}
+
+.news-item a {
+    color: #ff6666;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
 }

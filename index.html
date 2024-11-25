@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" content="no-cache">
-	
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-160981731-1');
-	</script>
-		<link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"> 
-		<base href="/alphatiuswebsite/">
-		<script src="javascript/jquery-3.5.1.min.js"></script>
-		<link href="images/alphatius-icon.png" rel="icon">
-		<link href="alphstyle.css" rel="stylesheet">
-		<title>Alphatius Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphatius 2</title>
+    <link rel="stylesheet" href="alphstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="logo"><img src="images/alphatius2-logo.png"></div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="pages/news.html">News</a>
+                <a href="pages/downloads.html">Downloads</a>
+            </nav>
+            <div class="cta">
+                <h1>Welcome to Alphatius 2!</h1>
+                <p>The thrill of the Galaxy awaits! Join the battle now!</p>
+                <a href="#downloads" class="btn">Play Now</a>
+            </div>
+        </div>
+    </header>
 
-    <h1><img src="images/alphatius-logo.png" alt="ALPHATIUS"></h1>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About</h2>
+        <p>Alphatius 2 is a free-to-play multiplayer game that uses a heavily modifed version of the classic "Doom Engine" <a href="https://qzandronum.com/">(Q-Zandronum)</a>.</p>
+    </section>
 
-    <div id="navbarspot"></div>
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="gameplay">
+        <h2>Gameplay Trailer</h2>
+        <div class="gameplay-video"> <iframe width=800rem height=400rem src="https://www.youtube.com/embed/D0Xz-N1FvMM" title="ALPHATIUS (RELEASE) - A PvP-Focused Doom-Engine Mod for Q-Zandronum" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </section>
 
-    <h2>THE NEXT GENERATION OF ARENA-SHOOTERS IS HERE</h2>
-    <p class="uppercase">Test your skills in this fast-paced, action-packed arena</p>
-    <div class="img-container">
-        <video class="home-video" width="960" height="560" autoplay muted loop>
-            <source src="videos/home/showoff.webm" type="video/webm">
-        </video>
-    </div>
-    <h2>UNIQUE WEAPONS WITH A PLAYSTYLE FOR EVERYONE</h2>
-    <p class="uppercase">Whether you like charging in head-first, accumulating frags from afar, or something in-between,
-    there's always a weapon for you</p>
-    <div class="weap-icon-container">
-        <img class="weap-icon" src="images/weapons/photoncarbine.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/c14.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/particlesplitter.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/teslasmg.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/sparkcannon.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/flamespitter.png" alt = "Missing IMG">
-        <img class="weap-icon" src="images/weapons/beamrifle.png" alt = "Missing IMG">
-    </div>
-    <h2>USE YOUR ABILITIES TO OUTPLAY YOUR OPPONENTS</h2>
-    <p class="uppercase">Choose your abilities to further customize your playstyle</p>
-    <div class="img-container">
-        <video class="home-video" width="960" height="480" autoplay muted loop>
-            <source src="videos/home/showoff-abilities.webm" type="video/webm">
-        </video>
-    </div>
-    <br><br>
-    <!--<footer></footer>-->
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">Weapons & Customization</div>
+            <div class="feature-card">Dynamic Gameplay Modes</div>
+            <div class="feature-card">Unique Maps</div>
+        </div>
+    </section>
 
-    <script>
-        $(function(){
-          $("#navbarspot").load("pages/navbar.html");
-        });
-    </script>
+    <!-- Media Section -->
+    <section id="media" class="media">
+        <h2>Screenshots</h2>
+        <div class="media-gallery">
+            <div class="media-item"><img src="images/screenshot1.png"></div>
+            <div class="media-item"><img src="images/screenshot2.png"></div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <!--<p>© 2024 Alphatius 2. All rights reserved.</p>-->
+        <div class="social-links">
+            <a href="https://x.com/auratoostronk">Twitter</a>
+            <a href="https://discord.gg/MqXv8FkCmX">Discord</a>
+            <a href="https://www.youtube.com/@auratoostronk">YouTube</a>
+        </div>
+    </footer>
 </body>
-
 </html>
