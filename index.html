@@ -8,6 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+
+            // Wrap around the index
+            if (index >= slides.length) currentIndex = 0;
+            if (index < 0) currentIndex = slides.length - 1;
+
+            // Hide all slides and remove active class from dots
+            slides.forEach(slide => {
+                slide.style.display = 'none'; // Hide slides
+                slide.style.height = '0';    // Reset height
+            });
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Show the current slide and set height
+            slides[currentIndex].style.display = 'block';
+            slides[currentIndex].style.height = '100%';
+            dots[currentIndex].classList.add('active');
+        }
+
+
+        function moveSlide(step) {
+            currentIndex += step;
+            showSlide(currentIndex);
+        }
+
+        function currentSlide(index) {
+            currentIndex = index - 1;
+            showSlide(currentIndex);
+        }
+
+        // Initialize the slideshow
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentIndex); // Display the first slide
+        });
+
+
+    </script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -15,22 +57,34 @@
         <div class="hero-content">
             <div class="logo"><img src="images/alphatius2-logo.png"></div>
             <nav class="navbar">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="pages/features.html">Features</a>
                 <a href="pages/news.html">News</a>
                 <a href="pages/downloads.html">Downloads</a>
             </nav>
             <div class="cta">
                 <h1>Welcome to Alphatius 2!</h1>
                 <p>The thrill of the Galaxy awaits! Join the battle now!</p>
-                <a href="pages/downloads.html" class="btn">Play Now</a>
+                <a href="pages/downloads.html" class="btn">PLAY NOW</a>
             </div>
         </div>
     </header>
+    
+    <section class="showoff">
+        <video autoplay muted loop playsinline class="showoff-video">
+            <source src="videos/home/showoff.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <!--<div class="showoff-overlay">
+            <h2>Experience the Thrill</h2>
+            <p>Fast-paced gameplay, dynamic maps, and adrenaline-fueled battles.</p>
+        </div>-->
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About</h2>
-        <p>Alphatius 2 is a free-to-play multiplayer game that uses a heavily modifed version of the classic "Doom Engine" <a href="https://qzandronum.com/">(Q-Zandronum)</a>.</p>
+        <p>Alphatius 2 is a free-to-play multiplayer mod that uses a heavily modifed version of the classic "Doom Engine" <a href="https://qzandronum.com/">(Q-Zandronum)</a>.</p>
     </section>
 
     <!-- Gameplay Section -->
@@ -40,23 +94,51 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <!--<section id="features" class="features">
         <h2>Features</h2>
         <div class="feature-grid">
             <div class="feature-card">Weapons & Customization</div>
-            <div class="feature-card">Dynamic Gameplay Modes</div>
+            <div class="feature-card">Classic Gameplay Modes</div>
             <div class="feature-card">Unique Maps</div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Media Section -->
     <section id="media" class="media">
         <h2>Screenshots</h2>
-        <div class="media-gallery">
-            <div class="media-item"><img src="images/screenshot1.png"></div>
-            <div class="media-item"><img src="images/screenshot2.png"></div>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="images/screenshots/screenshot1.png" alt="Screenshot 1">
+            </div>
+            <div class="slide">
+                <img src="images/screenshots/screenshot2.png" alt="Screenshot 2">
+            </div>
+            <div class="slide">
+                <img src="images/screenshots/screenshot3.png" alt="Screenshot 3">
+            </div>
+            <div class="slide">
+                <img src="images/screenshots/screenshot4.png" alt="Screenshot 4">
+            </div>
+            <div class="slide">
+                <img src="images/screenshots/screenshot5.png" alt="Screenshot 5">
+            </div>
+            <div class="slide">
+                <img src="images/screenshots/screenshot6.png" alt="Screenshot 6">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
     </section>
+
+
     
     <!-- Footer -->
     <footer class="footer">

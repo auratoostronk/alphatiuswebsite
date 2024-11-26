@@ -18,21 +18,62 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: #FF0000;
+    margin-bottom: 1rem;
 }
 
+
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    align-items: center;
+    gap: 2rem;
+    background-color: #800000; /* Dark red background */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: #FF0000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.navbar a:hover {
+    background-color: #ff4444; /* Red highlight on hover */
+    color: #FFFFFF;
+}
+
+.navbar a.active {
+    background-color: #ff0000; /* Highlight for the active link */
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+a
+{
+    color: #FF0000;   
+}
 .cta {
     margin-top: 2rem;
 }
@@ -61,16 +102,7 @@ body {
     padding: 2rem;
     text-align: center;
     background: #800000;
-}
-a
-{
-    color: #FF0000;
-    text-decoration-color: #FF0000;
-}
-a:visited
-{
-    color: #FF0000;
-    text-decoration-color: #FF0000;
+    font-size: 1.2rem;
 }
 
 /* Gameplay Section */
@@ -80,18 +112,81 @@ a:visited
     background: #000000;
 }
 
-/* Features Section */
+/* Features Page Styles */
 .features {
     padding: 2rem;
     text-align: center;
-    background: #221b16;
+    background-color: #17110d;
+    color: #ffffff;
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.features h1 {
+    font-size: 2.5rem;
+    color: #FF0000;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #a1a1a1;
+}
+
+.feature-category {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #800000;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.feature-category h2 {
+    color: #FF4444;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-category p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
+}
+
+.feature-category ul {
+    list-style: disc;
+    margin: 0 0 0 1.5rem;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+.feature-category ul li {
+    margin-bottom: 0.8rem;
+}
+
+
+.feature-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+}
+
+.feature-text {
+    flex: 1;
+    text-align: left;
+}
+
+.feature-image {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .feature-card {
@@ -100,28 +195,104 @@ a:visited
     border-radius: 10px;
     text-align: center;
     color: #FFFFFF;
+    font-size: 1.5rem;
 }
 
-/* Media Section */
+/* Media Section Slideshow */
 .media {
     padding: 2rem;
     text-align: center;
     background: #221b16;
 }
 
-.media-gallery {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+.media h2 {
+    font-size: 2rem;
+    color: #FF0000;
+    margin-bottom: 1rem;
+}
+/* Ensure slides inherit container size */
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Constrain the width */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    margin: auto;
+    overflow: hidden; /* Prevent overflow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Slides inherit container dimensions */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match container height */
+    display: none; /* Hide initially */
+    overflow: hidden;
+}
+
+/* Images fit inside the slide */
+.slide img {
+    width: 100%; /* Fit to container width */
+    height: 100%; /* Ensure images fill the slide */
+    object-fit: cover; /* Crop excess image content */
+}
+
+/* Make the first slide visible for debugging */
+.slide:first-child {
+    display: block; /* Show the first slide */
+}
+
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #FF0000;
+}
+
+/* Dots */
+.dots-container {
+    text-align: center;
     margin-top: 1rem;
 }
 
-.media-item {
-    background: #800000;
-    padding: 2rem;
-    border-radius: 10px;
-    flex: 1;
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
+
+.dot.active {
+    background-color: #FF0000;
+}
+
 
 /* Footer */
 .footer {
@@ -174,7 +345,7 @@ a:visited
 }
 
 .setup-instructions h2 {
-    color: #ff4444;
+    color: #FFFFFF;
     margin-bottom: 1rem;
 }
 
@@ -219,7 +390,7 @@ a:visited
 }
 
 .qa-section h2 {
-    color: #ff4444;
+    color: #FFFFFF;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -298,3 +469,57 @@ a:visited
 .news-item a:hover {
     text-decoration: underline;
 }
+
+/* Showoff Section */
+.showoff {
+    position: relative;
+    overflow: hidden;
+    height: 50vh; /* Show half the viewport height */
+    width: 100%; /* Full width of the page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+.showoff-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%; /* Ensure full X-axis coverage */
+    min-height: 100%; /* Cover the full height for cropping */
+    object-fit: cover; /* Maintain aspect ratio and crop excess Y */
+    pointer-events: none; /* Make video unclickable */
+}
+
+.showoff-overlay {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Ensure text is above the video */
+    text-shadow: 0 0 10px #000000;
+}
+
+.showoff-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #FF0000;
+}
+
+.showoff-overlay p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .showoff-overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .showoff-overlay p {
+        font-size: 1rem;
+    }
+}
+
