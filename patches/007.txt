@@ -1,0 +1,126 @@
+HIGHLIGHTS
+-Bot code has been updated (Thanks to TDRR for TDBots!). The bots now have more skill variation and behave more like real players.
+-A new custom announcer has been added.
+-Handicap settings have been added. Players of a higher skill level can reduce the damage they deal to accommodate for players of a lower skill level in the match.
+-Detailing updates to ALPHDM08 - Waste
+-Weapon balancing changes, including a nerf to the Plasma Carbine.
+
+WEAPON CHANGES
+-Beam Rifle
+	-Reduced Bandolier energy capacity 150 -> 144
+	-Main Fire
+		-Reduced damage per tic 3.67 -> 3.33
+	-Alt Fire
+		-Increased damage 16 -> 18
+-C-14
+	-Gamma Cannon
+		-Edge of radius damage reduced 9 -> 8
+		-Center of radius damage reduced 25 -> 24
+	-D-P-C
+		-Damage reduced 16 -> 14
+	-Cluster Shot
+		-Center of radius damage reduced 25 -> 20
+		-Edge of radius damage remains unchanged	
+-Flamespitter
+	-Flamethrower
+		-Projectile speed reduction reduced 6.0 -> 5.0
+	-Flame Barrage
+		-Projectile spread reduced 1.0 -> 0.2
+		-Projectile hitbox radius increased 4 -> 6
+		-Projectile hitbox height increased 8 -> 12
+		-Projectile speed increased 48 -> 64
+		-Gravity increased 0.8 -> 1.25
+		-Now ignores armor
+		-Removed Damage over time effect.
+		-Damage dealt changed from 4 on impact -> deals 1 damage every 4 tics for 4 tics on impact.
+		-Damage radius increased 48 -> 64
+	-Combustible Canister
+		-Direct Hit damage removed 10 -> 0
+		-Automatically detonates after 16 tics.
+-Particle Splitter
+	-Particle Spread
+		-Fire delay reduced 44t -> 40t	(~1.26 RPS -> ~1.14 RPS)
+	-Double Module
+		-Spread reduced 1.6 -> 1.5
+		-Fire delay reduced 40t -> 46t (~1.14 RPS ->  ~1.31 RPS)
+	-Choked Barrel
+		-Damage range reduced 640 -> 560
+		-Spread reduced 0.9 -> 0.8
+-Plasma Carbine
+	-Alt-Fire cooldown increased 6s -> 8s
+	-Plasma Pellets
+		-Damage reduced 14 -> 12
+	-Energy Grenade
+		-Damage reduced 60 -> 50
+		-Speed reduced 48 -> 40
+		-Gravity reduced 1.0 -> 0.8
+	-Linefire Missile
+		-Base damage reduced 40 -> 35
+		-Empowered damage reduced 80 -> 75
+-Spark Cannon
+	-Piercing Rail
+		-Damage reduced 85 -> 80.
+		-Fire delay increased 52t -> 56t (~0.67 RPS -> 0.63 RPS)
+		-Visual effects changed
+	-Explosive Rail
+		-Direct hit damage reduced 65 -> 60
+		-Blast radius increased 32 -> 40
+		-Visual effects changed
+	-Hadron Rail
+		-Total damage reduced 200 -> 150
+		-Charge time reduced 70t -> 60t (2.00s -> 1.71s)
+-Tesla SMG
+	-Speed Rounds
+		-Projectile Speed reduced 36 -> 32
+	-Homing Rounds
+		-Projectile Speed reduced 36 -> 32
+		-Homing strength reduced 10 -> 8
+	-Overdriven Shock Shots
+		-Spread reduced 2.0 -> 1.0
+		-Range reduced 640.0 -> 480.0
+	-Tesla Blades
+		-Forward thrust reduced 24 -> 16
+		
+TRAVEL ABILITY CHANGES
+-N/A
+
+ACTION ABILITY CHANGES
+-Ricochet Disc
+	-Edge of radius damage reduced 6 -> 5
+	-Center of radius damage reduced 12 -> 10
+	-Delay between shots increased 4t -> 5t
+
+PASSIVE ABILITY CHANGES
+-Nega-Shield
+	-Removed.
+-Vigor
+	-Spawn with an extra 10 Max HP -> Spawn with an extra 20 Bonus HP
+	-Bonus HP cannot be regained once lost.
+-Rapid-Alt Tech
+	-Cooldown reduction on kill reduced 4s -> 3s.
+
+MAP CHANGES
+-N/A
+
+PICKUP CHANGES
+-N/A
+
+USER INTERFACE CHANGES
+-The Gameplay Settings menu has been updated.
+-The title graphic and the title menu background have both been updated.
+
+BOT CHANGES
+-Bot logic and behavior has been overhauled. Bots now behave and path more like humans, and difficulty skills have been adjusted to cover a wider skill gap.
+-Bots can now use Thruster Boots in multiple directions.
+
+OTHER CHANGES
+-Added a custom announcer.
+-Servers can now disable weapon modifiers by setting "alph_noweaponmods" to false.
+-Servers can now configure health regeneration. 
+	-"alph_regendelay" controls the number of seconds before health regen starts.
+	-"alph_regenratedelay" controls the number of tics between each bit of health gain during regeneration.
+-The music track "Last Stand" has been updated.
+-New custom handicap settings. Players can now reduce the damage they deal to "even the playing field" for players of a lower skill level.
+-Players now freeze in the water of ALPHDM12.
+-Fixed a typo in the controls menu.
+-Frag enemy sound made louder and more treble-y.

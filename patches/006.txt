@@ -1,0 +1,87 @@
+HIGHLIGHTS
+-Added new Weapon Modifiers, allowing players to alter the functionality of their weapons' Main Fire and Alt Fire modes. This option can be found in the Loadouts menu under "Weapon Mods". Changes made here, like all Loadout changes, are reset upon respawn. Information on these have been posted in the Alphatius Discord, and detailed information will be posted soon.
+
+WEAPON CHANGES
+-Tesla SMG
+	-Reduced energy capacity 80 -> 60
+	-Reduced Bandolier energy capacity 100 -> 72
+-Particle Splitter
+	-Increased energy capacity 5 -> 6
+	-Increased Bandolier energy capacity 6 -> 8
+-Plasma Carbine (formerly "Photon Carbine")
+	-Name changed from "Photon Carbine" to "Plasma Carbine"
+-C-14
+	-Main Fire
+		-Edge of radius damage increased 8 -> 9
+		-Center of radius damage increased 24 -> 25
+-Spark Cannon
+	-Increased energy capacity 5 -> 6
+	-Increased Bandolier energy capacity 6 -> 8
+	-Main Fire
+		-Damage increased 80 -> 85.
+		-Fire delay increased 48t -> 52t (~0.73 RPS -> 0.67 RPS)
+	-Alt Fire
+		-Post-Fire delay reduced 20t -> 16t
+-Beam Rifle
+	-Reduced Bandolier energy capacity 150 -> 144
+	-Main Fire
+		-Reduced damage per tic 3.67 -> 3.33
+	-Alt Fire
+		-Increased damage 16 -> 18
+-Flamespitter
+	-Reduced Bandolier energy capacity 125 -> 120
+	-Main Fire
+		-Projectile initial speed increased 30 -> 36.
+		-Projectile slowdown speed increased 5.0 -> 6.0
+		-Projectile translucency changed slightly
+
+	-Alt Fire
+		-Energy cost reduced 20 -> 10
+		-Shoots a grenade filled with flammable fluids instead of a fireball
+		-Grenade arcs instead of traveling in a straight line
+		-Grenade explodes on contact instead of after a set duration
+		-Deals an additional 10 damage on direct hit
+		-Explosion from the grenade does 50 damage instead of the fireball's 60
+		-Explosion now does max damage 64 units away from the center (0 damage past 192 units unchanged).
+		-VFX Changed
+		-Debuff effects changed.
+		
+
+TRAVEL ABILITY CHANGES
+-N/A
+
+ACTION ABILITY CHANGES
+-Ricochet Disc
+	-Blast radius reduced 192 -> 160
+	-Edge of radius damage reduced 8 -> 6
+	-Center of radius damage reduced 15 -> 12
+
+PASSIVE ABILITY CHANGES
+-Nega-Shield
+	-Damage reduction increased 25% -> 40%
+-Rapid-Alt Tech
+	-Cooldown reduced increased 3s -> 4s
+
+MAP CHANGES
+-Changes to ALPHDM02 - Sediment
+-Changes to ALPHDM04 - Stronghold
+-Changes to ALPHDM06 - Asteroid
+-Changes to ALPHDM07 - Torrent
+-Changes to ALPHDM08 - Waste
+-Changes to ALPHDM09 - Sinkhole
+-Changes to ALPHMD11 - Andesite
+
+PICKUP CHANGES
+-N/A
+
+USER INTERFACE CHANGES
+-N/A
+
+BOT CHANGES
+-Reduced most bots evasion stat, allowing them to be more easily hit.
+
+OTHER CHANGES
+-Fixed a bug where Armored Target Dummies on the tutorial level had 50 armor instead of 75.
+-Added a CVAR alph_turbomode. When set to true, cooldowns are reduced drastically and all damage is doubled.
+-Fixed an exploit that allowed players to replace their starting weapon with any item of choice and spawn with a Photon Carbine.
+-Fixed a bug where players were being assigned a wrong TID after dying and respawning, causing many weird bugs.

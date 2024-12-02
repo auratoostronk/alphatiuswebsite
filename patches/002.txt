@@ -1,0 +1,48 @@
+WEAPON CHANGES
+-Tesla SMG
+	-Alt-Fire pre-fire delay decreased (10 tics -> 5 tics)
+	-Alt-Fire animation duration increased (12 tics -> 18 tics)
+	-Alt-Fire post-fire delay decreased (10 tics -> 5 tics)
+-Particle Splitter 
+	-Alt-Fire Cooldown decreased (4s -> 2s)
+
+
+ABILITY CHANGES
+-Added a new Travel Ability: Mach Charge
+	-Charge towards your crosshair and deal area damage on arrival
+	-Cooldown: 6s
+	-Radius: 160 units
+	-Damage: 30 damage
+	-Damage delay: 6 tics
+-Added a new Passive Ability: Vigor
+	-Spawn with 25 bonus health.
+-Passive abilities are now split into two categories. Players can pick one Passive ability from each.
+	-The two categories are as follows:
+	Passive 1:
+		-Rapid-Alt Tech
+		-Speed Demon
+		-Adrenaline Rush
+	Passive 2:
+		-Bandolier
+		-Action Overclock
+		-Vigor
+-Power Brace duration decreased 35tics (1s) -> 26tics (~0.75s)
+-Decoy Hologram now runs faster if the user has Hyperdrive set as their Travel Ability.
+
+MAP CHANGES
+-N/A
+
+PICKUP CHANGES
+-Power Cell duration increased 1s -> 2s
+-Action and Travel Ability damage is no longer affected by Power Cell.
+
+VISUAL CHANGES
+-Fixed a bug where Photon Carbine projectiles didn't glow as intended.
+-Alt-Fire cooldown is now shown on the HUD as an animated ring.
+	-This can be turned off in the menus or by setting "alph_altcdonhud" to false.
+-Icons on the hud now have a black border around them when on cooldown.
+
+OTHER CHANGES
+-Passive health regeneration is now disabled by default.
+-Added a Legacy Settings menu that has the default Q-Zandronum menu.
+-Fixed a bug where bots would not use their travel ability.

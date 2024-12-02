@@ -1,0 +1,43 @@
+WEAPON CHANGES
+-Particle Splitter
+	-Fire delay decreased 58 -> 54
+-Photon Carbine
+	-Projectile speed decreased 192 -> 144
+	-Grenade knock increased 150 -> 200
+-Tesla SMG
+	-Projectile visual scale reduced 0.3 -> 0.25 (hitbox unchanged)
+	-Projectile visual updated to be more vibrant.
+
+ABILITY CHANGES
+-Auto Laser projectile speed decreased 160 -> 128
+-Power Brace damage reduction increased 75% -> 100%
+-Shock Slam 
+	-Delay increased from 8 tics to 16 tics
+	-Now reduces damage by 50% while charging
+
+MAP CHANGES
+-New pickups added to all maps
+-Updated visuals for ALPHDM02 - Sediment
+-Updated visuals for ALPHDM03 - Magma
+-Updated visuals for ALPHDM04 - Stronghold
+-Various other small changes
+
+PICKUP CHANGES
+-Added Spare Ammo Pack
+	-When in inventory, refills all energy for the current weapon immediately after depletion
+	-Consumed on use
+-Added Power Cell
+	-When in inventory, boosts damage by 25% until 1 second after firing
+	-Consumed on use
+-HUD updated to show icons when Travel Sphere, Spare Ammo Pack, or Power Cell are in the player's inventory
+-Stimpack healing increased from 10 -> 15
+-Added item respawn fog
+-Added new item respawn sound
+
+OTHER CHANGES
+-Added blood effects to players
+-Added bot "Summer's Exile"
+-Updated Zoom options in the menu.
+-Chat sound added
+-Fixed a bug where players could pick up the Bot's Alt-Fire weapons.
+-Fixed a bug where health would always regenerate when alph_nohealthregen was on, even when players were in combat.

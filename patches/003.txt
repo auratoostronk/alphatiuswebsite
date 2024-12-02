@@ -1,0 +1,60 @@
+WEAPON CHANGES
+-Particle Splitter
+	-Alt-Fire split delay reduced 4t -> 3t.
+	-Energy recharge delay now starts when the weapon is fired instead of after the firing animation is completed.
+	-Fixed a bug where picking up a Power Cell mid-fire animation would consume the Power Cell.
+-Flamespitter
+	-Alt-Fire explosion radius decreased 256u -> 192u.
+-Spark Cannon
+	-Fixed a bug where picking up a Power Cell mid-fire animation would consume the Power Cell.
+	-Energy recharge delay now starts when the weapon is fired instead of after the firing animation is completed.
+-Photon Carbine
+	-Alt-Fire explosion damage increased 50 -> 60.
+	-Alt-Fire explosion radius decreased 224u -> 192u.
+-Weapon Energy recharge delay increased 2s -> ~2.5s (70t -> 90t).
+-Increased the sizes of Weapon Glows
+
+TRAVEL ABILITY CHANGES
+-N/A 
+
+ACTION ABILITY CHANGES
+-Auto Laser
+	-Cooldown 25s -> 20s
+-Ricochet Burst
+	-Cooldown 25s -> 20s
+-Shock Slam Radius reduced 256u -> 192u
+-Action Ability backend changed. Each Action ability now can have its own cooldown associated with it.
+-Reduced Mach Charge VFX size.
+
+PASSIVE ABILITY CHANGES
+-Vigor now grants 25 bonus Max Health instead of 25 bonus Spawn Health.
+
+MAP CHANGES
+-Updated ALPHTUT1 - Tutorial
+-Updated ALPHTUT2 - Firing Range
+-Updated ALPHDM06 - Asteroid
+-Updated ALPHDM08 - Waste
+
+PICKUP CHANGES
+-Extra Travel Charge
+	-Added a new Voxel / Sprite
+	-Renamed to "Afterburner".
+-Spare Ammo Pack Respawn time 20s -> 15s.
+-Fixed a bug where Nano-Plate armor pickups did not have a red glow.
+-Changed Chronal Drive 
+	-Sprite color changed from orange to blue.
+	-Sprite color changed from orange to blue.
+
+VISUAL CHANGES
+-Loadouts Menu 
+	-Raised both Passive Ability options to show slightly when menu is scrolled to the top
+-"Energy" on HUD renamed to "Weapon Energy"
+
+OTHER CHANGES
+-"geNia" bot renamed to "lgeNial"
+-"liljeck" bot renamed to "lilj3ck"
+-"Kaminsky" bot renamed to "KaminskyBOT"
+-Added bot "Kurodil the Serpent"
+-Renamed "Use" keybind to "Use / Respawn"
+-Lowered default volume levels.
+-Fixed a bug where bots did not have two passive abilities.

@@ -1,0 +1,84 @@
+HIGHLIGHTS
+-New map: ALPHDM14: Heatwave - Fight for control of this large area on a heated planet.
+-New weapon modifiers added to Beam Rifle and Flamespitter.
+-Various bug fixes and balance changes.
+
+WEAPON CHANGES
+-Beam Rifle
+	-Main-Fire
+		-New weapon modifier added: Siphon Beam
+			-Fires a weaker mid-range continuous hitscan beam that refunds ammo on successful hits.
+		-Fixed a bug where Lightning Beam would not consume ammo on the second tic of every three tics.
+	-Alt-Fire
+		-New weapon modifier added: Mega Ray
+			-Charge up the weapon to fire a powerful continuous hitscan beam of energy that continues until the weapon consumes all energy. Consumes energy rapidly.
+-C-14
+	-Alt-Fire
+		-Toxic Canister damage amount increased 15 -> 20
+		-Toxic Canister detonation delay decreased 30t -> 25t
+		-Cluster Shot max radius damage reduced 20 -> 15
+-Flamespitter
+	-Main-Fire
+		-Flame Barrage changed to Molten Ray
+			-Fires a rapid spray of arcing lava projectiles. Ignores armor.
+	-Alt-Fire
+		-Delay after shooting reduced 30t -> 5t
+		-New weapon modifier added: Thermite Quad-Blast
+			-Lauches 4 large fireballs that explode on impact.
+-Particle Splitter
+	-Main-Fire
+		-Choked Barrel fire rate increased 32t delay -> 30t delay
+-Photon Carbine
+	-Ammo Capacity reduced 80 -> 60
+	-Alt-Fire
+		-Underbarrel ShotBlast projectile speed reduced 104 -> 72
+		-Underbarrel ShotBlast projectile count reduced 40 -> 30 (Total damage 80 -> 60)
+-Spark Cannon
+	-Ammo Capacity reduced 6 -> 5
+	-Main-Fire
+		-Explosive Rail direct hit damage increased 30 -> 40 (Total damage 60 -> 70)
+		-Explosive Rail max blast damage radius reduced 40 -> 32
+	-Alt-Fire
+		-Cooldown increased 8s -> 10s
+		-Flux Orb hitbox size reduced 16r 32h -> 14r 28h
+		-Flux Orb projectile speed increased 24 -> 28
+		-Hadron Charger bonus explosive damage reduced 50 -> 25 (Total damage 150 -> 125)
+		-Fixed a bug where Hadron Charger would not remove all charge when fired.
+-Tesla SMG
+	-Main-Fire
+		-Homing Rounds damage decreased 8 -> 7
+		-Homing Rounds lifespan increased 14t -> 16t
+
+TRAVEL ABILITY CHANGES
+-Mach Charge now slows the user down much less upon landing (25% velocity -> 50% velocity)
+
+ACTION ABILITY CHANGES
+-Auto Laser
+	-Visual effects changed slightly
+
+-Ricochet Disc
+	-Edge of radius damage increased 5 -> 6
+	-Center of radius damage increased 10 -> 12
+	-Visual effects changed slightly
+
+PASSIVE ABILITY CHANGES
+-Bandolier no longer grants extra ammo capacity.
+
+MAP CHANGES
+-Jump pads have new added visual effects.
+-Changed the music for ALPHDM03 (Igneous)
+-Changed the music for ALPHDM09 (Sinkhole)
+
+PICKUP CHANGES
+-Fixed a bug where Chronal Drive would grant players full charges of Thruster Boots when recharged instead of one.
+
+USER INTERFACE CHANGES
+-Powerups and Power Cells now grant the user a visual around the outside of their screen. The transparency can be adjusted in the menus or by setting the CVAR "alph_screentint" to any value between 0.0 and 1.0
+
+BOT CHANGES
+-Fixed a bug where bots would not use the Tesla SMG or Particle Splitter
+
+OTHER CHANGES
+-Music volume normalized
+-Tried fixing a bug where additional announcer sounds were not normalized in multiplayer games
+-Fixed a bug where selecting random weapon would cause the player to spawn with no weapon

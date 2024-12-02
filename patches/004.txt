@@ -1,0 +1,85 @@
+HIGHLIGHTS
+-Sound engine updates.
+-Mach Charge updates.
+-Spark Cannon buffs.
+-Beam Rifle buffs.
+-Flamespitter adjustments.
+-ALPHDL05 - Sandstone updates.
+-New music.
+
+WEAPON CHANGES
+-Weapons now have distant firing sounds.
+-Most sounds now have different rolloffs (distance at which the sound can be heard).
+-Updated Explosion sounds.
+-Beam Rifle
+	-Primary Fire damage increased 3.5 per tic -> 3.67 per tic.
+	-Alt-Fire damage increased 15 -> 16.
+-Flamespitter
+	-Primary Fire Projectile speed increased 28 -> 30.
+	-Primary Fire Projectile slowdown amount decreased 6.0 -> 5.0.
+	-Alt-Fire Projectile speed increased 48 -> 56.
+	-Alt-Fire Projectile lifespan decreased 12t -> 9t.
+-Spark Cannon
+	-Primary Fire Fire rate increased ~0.65 RPS -> ~0.67 RPS (delay between shots decreased 54t -> 52t).
+	-Alt-Fire post-fire delay decreased 24t -> 16t.
+	-Alt-Fire base explosion radius decreased 256 -> 160.
+	-Alt-Fire combo explosion radius decreased 384 -> 320.
+	-Alt-Fire explosions updated to show blast radius.
+-Tesla SMG
+	-Primary Fire projectile VFX updated.
+
+TRAVEL ABILITY CHANGES
+-Mach Charge
+	-Now only grants a slight vertical momentum.
+	-Shockwave is created upon landing on the ground instead of after a set distance.
+-Warp Drive
+	-Strenght reduced from 1.2 -> 1.0.
+
+ACTION ABILITY CHANGES
+-Ricochet Burst
+	-Total Damage increased 12 -> 15.
+	-Minimum Damage increased 6 -> 8.
+
+PASSIVE ABILITY CHANGES
+-Vigor
+	-Bonus Max health decreased 25 -> 10.
+-Speed Demon
+	-No longer grants reduced Travel Ability cooldown.
+	-Now grants an Afterburner on kill
+-Overclocked
+	-Fixed a bug where Action Ability cooldowns were not being reduced as intended.
+
+MAP CHANGES
+-Updated ALPHDM02 - Sediment
+	-Added new music
+-Updated ALPHDM03 - Igneous
+	-Added new music
+-Updated ALPHDM08 - Waste
+	-Added new music
+-Updated ALPHDL01 - Cagefight
+	-Updated sky
+	-Fixed a bug where glass could be shot through.
+-Updated ALPHDL05 - Sandstone
+	-Reworked map and added new area.
+-Updated ALPHTUT1 - Tutorial
+	-Fixed some script errors.
+
+PICKUP CHANGES
+-Power Cell
+	-Screen visual changed slightly.
+
+USER INTERFACE CHANGES
+-Added new team names instead of Red and Blue for teammodes.
+-Changed max sound volumes from 0.2 -> 0.4
+-Moved "Spawn health pickups" and "Spawn armor pickup" options in the Gameplay options menu.
+-Added information pages back.
+-Fixed a typo for the Flamespitter in the Weapon info menu.
+
+BOT CHANGES
+-Added bot "Skeletron"
+-"ludwig" bot renamed to "lewdwig"
+
+OTHER CHANGES
+-Tutorial Dummies now trigger Passive Abilities on death.
+-Increased global music volume.
+-Health regen rate decreased 1HP every 4t -> 1HP every 7t.

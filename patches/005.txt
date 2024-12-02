@@ -1,0 +1,96 @@
+HIGHLIGHTS
+-Updated visual effects for Tesla SMG, Spark Cannon, and Beam Rifle
+-Increased ammo capacity for many weapons.
+-Added a new Passive Ability - Nega-Shield
+-Updated ALPHDL01 - Cagefight
+-Armor Capacity and damage reduction increased.
+
+WEAPON CHANGES
+-Tesla SMG
+	-New death animation for players killed by this weapon.
+	-Bandolier Ammo Capacity 100 -> 125.
+	-Visual effects updated.
+-Photon Carbine
+	-Damage increased 13 -> 14.
+	-Ammo Capacity increased 60 -> 80.
+	-Bandolier Ammo Capacity 72 -> 100.
+-C-14
+	-Ammo Capacity increased 30 -> 40.
+	-Bandolier Ammo Capacity 36 -> 50.
+-Beam Rifle
+	-Updated visual effects.
+	-Ammo Capacity increased 100 -> 120.
+	-Bandolier Ammo Capacity 120 -> 150.
+	-Fixed a bug where the Alt-Fire sound would play during the Main Fire.
+-Spark Cannon
+	-Alt-Fire Combo radius decreased 320 -> 256.
+	-Fire rate decreased (52t delay after firing -> 56t delay after firing).
+	-Alt-Fire fire rate decreased (16t delay after firing -> 24t delay after firing).
+	-Visual effects updated.
+	-Tried fixing a bug that caused the Alt-Fire to explode a second time randomly after already exploding (Needs testing).
+
+TRAVEL ABILITY CHANGES
+-Mach Charge
+	-Damage radius increased 160 -> 192.
+	-Damage radius indicator color changed Red -> White.
+	-No longer stops the user upon landing.
+		-Instead, reduces their momentum by 75%.
+	-Fixed some unlagging issues.
+-Warp Drive
+	-Duration decreased 8t -> 6t (this affects the distance traveled).
+	-Fixed some unlagging issues.
+-Hyper Sprint
+	-Fixed a bug where the effect ending sound would play after respawning.
+
+ACTION ABILITY CHANGES
+-Power Brace
+	-Model is now invisible to the user.
+	-Model now follows the player more smoothly.
+-Decoy Hologram
+	-Fixed a bug where decoys were not running faster when Hyper Sprint was equipped.
+
+PASSIVE ABILITY CHANGES
+-New Passive Ability - Nega-Shield
+	-Reduces damage taken when hit by 25% for ~0.5s. Recharges after 8s of not taking damage.
+-Action Overclocked
+	-Cooldown reduction increased 20% -> 25%.
+-Adrenaline Rush
+	-Healing increased 10hp -> 15hp
+	-Duration increased 2s -> 3s
+-Speed Demon
+	-No longer grants an afterburner on kill.
+	-Now resets Travel Ability cooldown on kill.
+
+MAP CHANGES
+-Updated ALPHDL01 - Cagefight
+	-Updated layout moderately, added a lot of detail, and changed music.
+-Updated ALPHDL02 - Outpost
+	-Minor updates.
+-Updated ALPHDM01 - Quarry
+	-Minor updates.
+-Updated ALPHDM04 - Stronghold
+	-Minor updates.
+-Updated ALPHDM05 - Frostbite
+	-Changed sky height.
+-Updated ALPHDM12 - Maritime
+	-Updated detailing slightly and some minor layout changes.
+
+PICKUP CHANGES
+-Max armor capacity increased 50 -> 75.
+-Armor damage reduction increased 50% -> 66.7%.
+-Removed screen tint when picking up a Power Cell.
+
+USER INTERFACE CHANGES
+-Updated Loadout menu to fit without needing to scroll.
+-Moved Tutorial back to the main menu.
+-Volume sliders increment in larger values now.
+
+BOT CHANGES
+-Reduced bot difficulties for some bots.
+
+OTHER CHANGES
+-Added water splash effects.
+-Players now sink in water.
+-Players now have more blood when damaged.
+-Reduced volumes on Weapon Energy recharge and Alt-Fire recharge sounds.
+-Fixed a bug where fragging yourself would play the kill sound.
