@@ -1,0 +1,110 @@
+HIGHLIGHTS
+-Updates to ALPHDM03 - Igneous
+-New armor voxels
+-New updated ability icons
+-New Passive Ability: Cell Boost
+-Buffed most Passive Abilities to make them more impactful
+
+WEAPON CHANGES
+-Shared Alt-Fire cooldown reduced 2s -> 1s
+-Energy recharge cooldown reworked slightly
+	-All weapons now begin recharging energy after they finish firing rather than before
+	-Delay before energy regenerates 90t -> 60t
+-Beam Rifle
+	-Alt-Fire
+		-Fixed a bug where Mega Ray would get stuck in an infinite loop if fired with an odd energy amount (This was also patched in alphatius2-qz-008-patch2.pk3)
+-Flamespitter
+	-Main-Fire
+		-Molten Ray speed increased 48 -> 64
+		-Molten Ray gravity increased 1.0 -> 1.25
+		-Fixed Molten Ray using old "Flame Barrage" obituary
+		-Fixed Molten Ray using old "Flame Barrage" name in Loadout menu.
+-Photon Carbine
+	-Main Fire
+		-Plasma Pellets and Carbine Burst projectile hitbox adjusted (Radius 6 -> 4, Height 6 -> 8)
+		-Adjusted VFX trail offset
+	-Alt-Fire
+		-Underbarrel Shotblast wall hit sound added
+-Spark Cannon
+	-Alt-Fire
+		-Reduced Destabilized Orb projectile speed 28 -> 24
+		-Slightly changed VFX for Hadron Charger
+
+TRAVEL ABILITY CHANGES
+-Hypersprint
+	-Active speed increased 25% -> 30%
+
+ACTION ABILITY CHANGES
+-Auto Laser
+	-Damage Increased 5 -> 6
+-Regeneration Zone
+	-Duration decreased 4s -> 3s
+-Shock Slam
+	-Damage increased 35 -> 50
+	-Radius increased 192 -> 256
+	-Delay before detonation increased 18t -> 20t
+	-Cooldown reduced 20s -> 15s
+	
+
+PASSIVE ABILITY CHANGES
+-Added a new Passive: Cell Boost
+	-Grants a Power Cell on spawn.
+	-Kills grant 25% damage boost for 2 seconds.
+-Bandolier
+	-Energy restore increased 25% -> 35%
+	-Added a sound that plays when activated
+-Rapid-Alt Tech
+	-Cooldown reduction increased 3s -> 4s
+	-Added a sound that plays when activated
+-Adrenaline Rush
+	-No longer reduces passive health regeneration delay.
+	-Added a sound that plays when activated
+-Vigor
+	-Increases Max Health by 20 instead of granting 20 bonus health on spawn.
+
+MAP CHANGES
+-Map name, music, and music artists are now displayed on match start.
+-Changed the music for ALPHDM01 "Quarry".
+-Updated skybox effects and changed lava room on ALPHDM03 "Igneous"
+-Added more map details to ALPHDM05 "Frostbite" including crystals and room glows
+-Increased lift delay on ALPHDM09 "Sinkhole", ALPHDM10 "Andesite", and ALPHDM13 "Crevice"
+-Added more map details to ALPHDM14 "Heatwave" including crystals in some areas
+-Updated Firing range to include a loadout swap switch
+-Added Domination support for the following maps:
+	-ALPHDM03 "Igneous"
+	-ALPHDM05 "Frostbite"
+	-ALPHDM06 "Protoplanet"
+	-ALPHDM08 "Waste"
+	-ALPHDM09 "Sinkhole"
+	-ALPHDM11 "Excavation"
+	-ALPHDM14 "Heatwave"
+
+PICKUP CHANGES
+-Nano Armor sprite changed.
+-Nano Armor and Nano Plate pickups have a new voxel model
+-Nano Armor and Nano Plate hitbox heights increased to match the visuals
+	Nano Armor height increased 24 -> 40
+	Nano Plate height increased 24 -> 48
+-Medikit hitbox changed 
+	Medikit height 16 -> 24
+
+USER INTERFACE CHANGES
+-All ability icons are now updated
+-Intermission picture updated
+-Changed Field of View and Zoom Speed sliders to increase in increments of 1 instead of 0.1
+-Added obtained weapons on the side of the HUD.
+-Fixed a bug where Cooldown rings would flash on the HUD. (This was also patched in alphatius2-qz-008-patch1.pk3)
+-Fixed a bug where Powerup tints would flash on the HUD. (This was also patched in alphatius2-qz-008-patch1.pk3)
+
+BOT CHANGES
+-Liljeck color changed
+-[CR]yler bot stats increased slightly, color changed slightly
+-Added bot "AlexBrightLight"
+-Added bot "SkyHighFrags"
+
+OTHER CHANGES
+-Player Mass reduced 100 -> 50. This effectively means that knockback is increased by double across the board
+-Updated credits
+-Updated Readme
+-Most sound effects have reduced volume.
+-Platform raise and lower sounds added.
