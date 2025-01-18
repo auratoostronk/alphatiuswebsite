@@ -5,6 +5,10 @@ body {
     background-color: #17110d;
     color: #ffffff;
 }
+h1
+{
+    text-transform: uppercase;
+}
 
 /* Hero Section */
 .hero {
@@ -95,6 +99,7 @@ a
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* About Section */
@@ -305,12 +310,20 @@ a
 .footer .social-links a {
     text-decoration: none;
     margin: 0 0.5rem;
-    color: #dd0000;
+    color: #FF0000;
+    font-size: 1.2rem;
+}
+
+.footer .social-links a:hover {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
 }
 
 /* Hero Section for Downloads Page */
 .small-hero {
-    height: 200px;
+    /*height: 200px;*/
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/downloads-background.jpg') center/cover no-repeat;
 }
 
