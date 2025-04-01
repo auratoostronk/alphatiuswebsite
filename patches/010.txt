@@ -1,0 +1,151 @@
+HIGHLIGHTS
+-Updated fonts
+-Updated main menu
+
+WEAPON CHANGES
+-Updated glowing lights for weapon modifiers and updated some existing lights.
+-Beam Rifle
+	-Main-Fire
+		-Lightning Beam damage increased ~3.67 -> 4
+		-Siphon Beam damage increased ~2.67 -> 3
+	-Alt-Fire
+		-Cooldown reduced 10s -> 8s
+		-Focus Lens damage increased 12 -> 13
+		-Mega Ray damage increased ~4.5 -> 5
+		-Updated Mega Ray charge sound.
+
+-C14
+	-Main Fire
+		-Gamma Cannon damage at edge of explosion increased 8 -> 10
+		-Gamma Cannon damage at center of explosion increased 24 -> 26
+		-D-P-C visuals updated
+		-D-P-C damage increased 14 -> 15
+	-Alt-Fire	
+		-Gas Canister hit sounds can be heard from further away (400 -> 1600)
+		-Gas Canister gas hiss sounds can be heard from further away (800 -> 1600)
+		-Gas Canister gas clouds despawn faster
+		-Updated Cluster Bomb charge sound.
+
+-Flamespitter
+	-Main-Fire
+		-Flamethrower and Molten Ray no longer have an animation when firing stops
+		-Molten Ray projectile spawn offsets adjusted
+		-Molten Ray no longer ignores armor, but deals double damage to it instead.
+	-Alt-Fire
+		-Thermite Quad-Blast animation updated
+		-Thermite Quad-Blast delays between shots reduced 5t -> 4t
+		-Thermite Quad-Blast delay after shooting increased 0t -> 16t
+
+-Particle Splitter
+	-Main-Fire
+		-Particle Spread projectile lifespan reduced 10t -> 7t
+		-Double Module projectile lifespan reduced 10t -> 7t
+		-Choked Barrel damage per pellet increased 2 -> 3
+		-Choked Barrel pellet count decreased  30 -> 25
+		-Choked Barrel total damage per shot increased 60 -> 75
+		-Choked Barrel delay between shots increased 30t -> 36t (Fire rate ~1.17 shots/sec -> ~0.97 shots/sec)
+	-Alt-Fire
+		-RAD Slug projectile speed increased 64 -> 72
+		-Fixed a bug where RAD Slug detonations would spawn along the ground instead of 32 units above the victim.
+
+-Plasma Carbine
+	-Finished renaming all references of Photon Carbine to Plasma Carbine.
+	-Main-Fire
+		-Plasma Pellets damage increased 12 -> 13
+		-Plasma Pellets projectile speed reduced 144 -> 128
+		-Carbine Burst damage increased 12 -> 13
+		-Carbine Burst projectile speed reduced 144 -> 128
+	-Alt-Fire
+		-Cooldown reduced 8s -> 6s
+
+-Spark Cannon
+	-Ammo capacity increased 5 -> 6
+	-Main-Fire
+		-Piercing Rail delay between shots reduced 64t -> 54t (0.55 shots/sec -> 0.65 shots/sec)
+		-Explosive Rail delay between shots reduced 64t -> 54t (0.55 shots/sec -> 0.65 shots/sec)
+	-Alt-Fire
+		-Flux Orb delay after shot increased 20t -> 24t
+		-Flux Orb damage increased 125 -> 150 (at center of explosion)
+		-Hadron Charger explosive damage increased 25 -> 50
+		-Hadron Charger total damage increased 125 -> 150
+		-Hadron Charger delay after shooting reduced 68t -> 64t
+
+-Tesla SMG
+	-Main-Fire
+		-Speed Rounds speed increase increased 0.2 -> 0.25
+		-Homing Rounds damage increased 7 -> 8
+		-Overdriven Shock Shots spread increased 1.0 -> 2.0
+
+TRAVEL ABILITY CHANGES
+-Thruster Boots
+	-Cooldown increased 4s -> 5s
+-Jet Leap
+	-No longer thrusts the user downwards when the user is looking down, instead thrusts them upwards.
+-Warp Drive
+	-Strength increased 1.0 -> 1.2
+
+ACTION ABILITY CHANGES
+-Auto Laser
+	-Damage reduced 6 -> 5
+	-Shots fired increased 20 -> 25
+	-Cooldown increased 20s -> 25s
+-Regeneration Zone
+	-Duration increased 3s -> 4s
+	-Cooldown increased 25s -> 30s
+-Ricochet Burst
+	-Added a 5t delay before discs start firing.
+	-Cooldown increased 20s -> 25s
+	-Added a proper sound rolloff definition (Full volume at 400 units to unheard at 1600 units)
+-Shock Slam
+	-Damage reduced 50 -> 40
+	-Cooldown increased 15s -> 20s
+	
+
+PASSIVE ABILITY CHANGES
+-Rapid-Alt Tech
+	-Cooldown restored on kills changed from 140t flat -> 33% of the total cooldown.
+-Adrenaline Rush
+	-No longer grants Movespeed on kill.
+	-Reduced sound volume 0.2 -> 0.1
+-Bandolier
+	-Increased sound volume 0.05 -> 0.1
+-Speed Demon
+	-Reduced sound volume 0.2 -> 0.1
+
+MAP CHANGES
+-Teleporter effects added to all teleporters.
+-Visual Rework to ALPHDM01. More colors, lighting, and differentiation between areas.
+-Visual Rework to ALPHDM03. Added more lighting to dark areas.
+-Updated music on ALPHDM01.
+-Updated the sky on ALPHDM12.
+-Updated the sky on ALPHDL01.
+-Updated tutorial music.
+-Removed Tutorial and Firing Range from the list of offline skirmish maps.
+-Changed certain colored textures, namely the ones below weapon spawns.
+
+PICKUP CHANGES
+-Stimpack health restoration reduced 15 -> 10
+
+USER INTERFACE CHANGES
+-Big and small fonts updated. New Main-Menu font added. All these fonts are high resolution.
+-Pickups on HUD now appear darker when not in the user's inventory.
+-Weapon Alt-Fire and Charge rings are now updated
+-New Weapon Modifier menu icon
+-Main Menu graphic updated to be high resolution.
+-Menu selector graphic updated to be high resolution.
+-Main Menu music updated.
+-Main Menu background updated.
+-Afterburners now show as an Icon on the HUD instead of just an orange number.
+-The "United Colonial Security Front" team has been renamed to the "U.C.S.F."
+-The "Sanfalen Confederacy" has been renamed to the "Sanfalen Empire"
+-Speed boosts now have a visual indicator around the outside of the screen.
+
+BOT CHANGES
+-Bots will now try to use the Spark Cannon at a further range if possible.
+
+OTHER CHANGES
+-Updated Startup loading screen to show Alphatius 2 instead of Alpahtius
+-All ENTER Scripts are now handled differently. This fixes compatibility issues with another addon mod "Final Stand" for Team Last Man Standing.
+-Players are no longer given full armor in Last Man Standing / Team Last Man Standing.
+-Last Man Standing and Team Last Man Standing now spawn items on the map, and also force other CVARs.
+-All liquids now have slight depth to them. Splashes are coming soon!
