@@ -1,0 +1,7 @@
+WEAPON CHANGES
+-Plasma Carbine
+	-Main-Fire
+		-Plasma Pellets damage reduced 13 -> 12
+		-Carbine Burst damage reduced 13 -> 12
+OTHER CHANGES
+-Fixed a skybox texture bug in software renderer for ALPHDM14 - Heatwave.
