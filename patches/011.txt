@@ -1,0 +1,128 @@
+HIGHLIGHTS
+-Map visual overhaul Pt. 1
+-UI visual overhaul
+-Default max health increased
+-Custom Killing Spree/Multi-Kill announcer sounds
+
+WEAPON CHANGES
+-Beam Rifle
+	-Reduced ammo capacity 120 -> 100
+	-Added new decals / VFX when hitting walls
+
+-C14
+	-Added new decals / VFX when hitting walls
+	-Main Fire
+		-Gamma Cannon damage at edge of explosion reduced 10 -> 8
+		-Gamma Cannon damage at center of explosion reduced 26 -> 24
+	-Alt-Fire	
+		-Toxic Canister damage rate changed (20 every 4 tics -> 5 damage every 1 tic)
+		-Toxic Canister VFX updated
+		-Cluster Shot damage at edge of explosion reduced 10 -> 8
+		-Cluster Shot damage at center of explosion reduced 15 -> 14.
+
+-Flamespitter
+	-Main-Fire
+		-Flamethrower projectile speed increased 36 -> 40
+		-Flamethrower projectile speed slowdown amount increased 5.0 -> 6.0
+
+-Particle Splitter
+	-VFX changed for expired projectiles
+	-Main-Fire
+		-Particle Spread damage per pellet reduced 5 -> 4
+		-Particle Spread max damage per shot reduced 125 -> 100
+		-Double Module spread reduced 1.5 -> 1.3
+		-Double Module pellets count reduced 25 -> 20
+		-Double Module max damage per shot reduced 100 -> 80
+		-Double Module time between shots increased 12t -> 18t
+		-Double Module pump time reduced 46t -> 36t 
+		-Double Module fire rate reduced  0.5 average RPS ->  ~0.48 average RPS
+		-Choked Barrel damage per pellet reduced 3 -> 2
+		-Choked Barrel pellet count increased 25 -> 30
+		-Choked Barrel max damage per shot reduced 75 -> 60
+	-Alt-Fire
+		-Splitter Pellet adjusted to mimic Particle Spread changes
+		-RAD Slug base damage reduced 120 -> 100
+		-RAD Slug damage falloff begins later (after 5 tics -> after 6 tics)
+
+-Plasma Carbine
+	-VFX adjusted
+	-Added new decals / VFX when hitting walls
+	-Main-Fire
+		-Recoil increased 0.2 -> 0.3 (This recoil only affects the shots between bursts on Carbine Burst)
+	-Alt-Fire
+		-Underbarrel Shotblast sound changed
+
+-Spark Railgun (Renamed from Spark Cannon)
+	-Main-Fire
+		-VFX Adjusted slightly
+		-Fire rate reduced slightly ~0.65 RPS -> ~0.60 RPS
+		-Explosive Railgun now deals minimum 10 damage at the edge of explosion (Direct hit damage unchanged 70)
+	-Alt-Fire
+		-Destabilized Orb projectile speed reduced 28 -> 24
+		
+-Tesla SMG
+	-Main-Fire
+		-Speed Rounds damage increased 10 -> 13
+		-Homing Rounds damage increased 8 -> 9
+	-Alt-Fire
+		-Powerful Shockblades damage increased 80 -> 100
+		-Powerful Shockblades thrust increased 16 -> 20
+
+
+TRAVEL ABILITY CHANGES
+-Mach Charge
+	-Fixed a bug where Mach Charge did not spawn damage zone upon landing near a wall.
+
+ACTION ABILITY CHANGES
+-Ricochet Burst
+	-Updated VFX.
+
+PASSIVE ABILITY CHANGES
+-Disabled passive ability sound effects
+-Vigor
+	-Bonus health increased 20 -> 25.
+
+MAP CHANGES
+-Removed all Quake 3 music, replaced with orignial soundtrack.
+-The following maps have been visually overhauled
+	-ALPHDM01 - Quarry
+	-ALPHDM02 - Sediment
+	-ALPHDM03 - Igneous
+	-ALPHDM04 - Stronghold
+	-ALPHMD05 - Frostbite
+	-ALPHMD06 - Protoplanet
+	-ALPHDM07 - Torrent
+	-ALPHDM08 - Waste
+	-ALPHDM11 - Excavation
+	-ALPHDM13 - Crevice
+
+
+
+PICKUP CHANGES
+-Armor
+	-Damage reduction reduced 66.7% -> 50%.
+-Health
+	-Large health restoration increased 25 -> 50.
+	-Small health restoration increased 10 -> 20.
+-Chronal Drive
+	-Now reduces damage taken by 50%
+
+
+USER INTERFACE CHANGES
+-Updated some of the fonts.
+-Updated all ability icons
+-Changed Weapon Modifier's menu icon
+-Updated the "Play Offline" menu
+-HUD updated to include new ability icons.
+
+BOT CHANGES
+-Added a built-in autobot script. Adjust the alph_botcount cvar to automatically fill server with bots when player count is low.
+
+OTHER CHANGES
+-Player spawn health increased 100 -> 150
+-Added new "Killing Spree" / "Multi-kill" announcer sounds
+-Default health regen delay reduced 6s -> 4s
+-Default health regen rate increased 1hp every 7t -> 1hp every 5t
+-Added a cvar "alph_nohandicaps" to disable handicaps.
+-Adjusted damage thrust formula. Damage now thrusts users more, allowing for more "rocket jump"-like tactics and more.
+-Defaulted "sv_ringouttics" to 105. This should allow players to get kills if the target they have damaged dies to map hazards in the last 3 seconds.
