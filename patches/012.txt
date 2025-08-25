@@ -1,0 +1,129 @@
+HIGHLIGHTS
+- Weapon Mods menu updated
+- Database support added
+- Default maximum health reduced
+
+WEAPON CHANGES
+- Explosion smoke and flash effects updated to be less visually obstructive.
+- Energy Recharge cooldown increased: 60t (~1.7s) → 105t (3s).
+- Fixed a bug where weapons would retain their zoom state when swapping.
+
+Beam Rifle
+    - Energy capacity increased: 100 → 150.
+    - Alt-Fire cooldown increased: 8s → 10s.
+    - Main Fire
+        - Firing animation updated.
+    - Alt-Fire
+        - Fixed a typo in Mega Ray's obituary.
+
+C14
+    - Energy capacity increased: 40 → 50.
+    - Main Fire
+        - Gamma Cannon radius reduced: 96 → 64.
+        - Gamma Cannon maximum damage reduced: 24 → 23.
+        - Gamma Cannon minimum damage reduced: 8 → 5.
+        - D-P-C firing trail made more visible.
+    - Alt-Fire
+        - Toxic Canister VFX updated. Gas now expands as it spawns.
+
+Flamespitter
+    - Energy capacity increased: 100 → 150.
+    - Main Fire
+        - Flamethrower now uses an updated method of slowing projectile velocity.
+        - Projectiles now slow by 70% per tic instead of a fixed amount (formerly 6.0).
+        - Projectiles no longer shift direction oddly when fired at vertical angles.
+    - Alt-Fire
+        - Thermite Quad-Blast speed increased: 48 → 72.
+        - Thermite Quad-Blast range limitation removed.
+        - Thermite Quad-Blast scale and hitbox increased: (0.8 → 1.2), (8r → 12r), (16h → 24h).
+        - Thermite Quad-Blast VFX updated.
+
+Particle Splitter
+    - Energy capacity increased: 6 → 8.
+    - Main Fire
+        - Fixed a bug where Double Module fired faster than intended on its second shot.
+        - Fixed a desync with Double Module.
+    - Alt-Fire
+        - RAD Slug Detonation projectile speed increased: 20 → 24.
+
+Plasma Carbine
+    - Energy capacity increased: 60 → 100.
+    - Main Fire
+        - Visual recoil increased: 0.3 → 0.4.
+        - Plasma Pellets projectile speed increased: 128 → 144.
+        - Plasma Pellets damage reduced: 13 → 12.
+        - Carbine Burst projectile speed increased: 128 → 144.
+        - Carbine Burst damage reduced: 13 → 12.
+        - Visual recoil no longer applies actual recoil to Carbine Burst.
+        - Carbine Burst fire rate decreased: ~1.59 bursts/sec → ~1.52 bursts/sec.
+
+Tesla SMG
+    - Energy capacity increased: 60 → 80.
+    - Main Fire
+        - Speed Rounds damage reduced: 13 → 12.
+        - Speed Rounds projectile speed increased: 32 → 40.
+        - Homing Rounds damage reduced: 9 → 8.
+        - Homing Rounds projectile speed increased: 32 → 40.
+        - Homing Rounds lifespan reduced: 16t → 10t.
+        - Homing Rounds seeking strength slightly reduced.
+        - Overdriven Shock Shots damage reduced: 9 → 8.
+    - Alt-Fire
+        - Powerful Shockblades damage reduced: 100 → 80.
+        - Powerful Shockblades forward recoil reduced: 20 → 12.
+
+TRAVEL SKILL CHANGES
+Hyper Sprint
+    - Screen visual effects updated.
+Mach Charge
+    - Radius indicator VFX updated.
+
+ACTION SKILL CHANGES
+Regen Zone
+    - Particle effects enhanced.
+Shock Slam
+    - Radius indicator updated.
+
+PASSIVE SKILL CHANGES
+Action Overclock
+    - Now belongs to Passive Slot 1 instead of Passive Slot 2.
+Cell Boost
+    - No longer increases weapon damage on kill.
+    - Power Cells now grant 10 health when equipped.
+Bandolier
+    - Now recharges weapon energy 25% faster.
+Adrenaline Rush
+    - Now belongs to Passive Slot 2 instead of Passive Slot 1.
+    - If health regeneration is enabled, regeneration begins faster when equipped.
+
+MAP CHANGES
+- ALPHDM09 - Sinkhole has been visually overhauled.
+
+PICKUP CHANGES
+Armor
+    - Damage reduction increased: 50% → 66.7%.
+Health
+    - Large health restoration decreased: 50 → 25.
+    - Small health restoration decreased: 20 → 10.
+Chronal Drive
+    - No longer reduces damage taken by 50%.
+Afterburner
+    - Uses a new voxel for the pickup and a new sprite for icons.
+
+USER INTERFACE CHANGES
+- Updated the Weapon Mods menu.
+- Updated Smallfont.
+- Updated HUD Health/Ammo/Armor bars.
+- Map pics resized to take up less space.
+- Adjusted HUD ability icons to be larger.
+
+BOT CHANGES
+- Fixed the built-in autobot script.
+- The alph_botcount cvar now automatically fills servers with bots when player count is low. Also works with team modes when playing offline.
+
+OTHER CHANGES
+- Added database support to store player kills by weapon.
+- Cleaned up many causes of desyncs.
+- Player spawn health reduced: 150 → 100.
+- Default health regeneration delay increased: 4s → 5s.
+- Default health regeneration rate increased: 1 HP every 5t → 1 HP every 2t.
+- Reverted kill sound to version 010’s kill sound with slight modifications.
